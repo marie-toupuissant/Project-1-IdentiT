@@ -5,22 +5,23 @@
   --button-color-light: #255957;
   --button-color-dark: #f78764;
   --text-color: #55545c;
+  --background-color: #f0ece9;
 
   /* Fonts */
   --title-font: "Righteous", "arial", "cursive";
   --sub-title-font: "Roboto", "arial", "sans-serif";
   --paragraph-font: "Roboto", "arial", "sans-serif";
-  --spacing: 2.5rem;
+  --paragraph-spacing: 1.875rem;
 
   /* Desktop font-size */
-  --title-font-size: 10rem;
-  --sub-title-font-size: 3.75rem;
-  --paragraph-font-size: 2.5rem;
-  --button-font-size: 2rem;
+  --title-font-size: 5rem;
+  --sub-title-font-size: 2rem;
+  --paragraph-font-size: 1.25rem;
+  --button-font-size: 1rem;
 
   /* Mobile font-Size */
-  /* --title-font-size-mobile:5rem;
-    --sub-title-font-size-mobile:2.5rem;
-    --paragraph-font-size-mobile:2rem;
-    --button-font-size-mobile:1.75rem; */
+  /* --title-font-size-mobile:2.5rem;
+    --sub-title-font-size-mobile:1.25rem;
+    --paragraph-font-size-mobile:1rem;
+    --button-font-size-mobile:0.875rem; */
 }
