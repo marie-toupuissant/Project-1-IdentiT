@@ -1,26 +1,26 @@
 :root {
-  /* Colors */
-  --header-color: #a8c8bc;
-  --bgc-newsletter: #b86f52;
-  --button-color-light: #255957;
-  --button-color-dark: #f78764;
-  --text-color: #55545c;
-
-  /* Fonts */
-  --title-font: "Righteous", "arial", "cursive";
-  --sub-title-font: "Roboto", "arial", "sans-serif";
-  --paragraph-font: "Roboto", "arial", "sans-serif";
-  --spacing: 2.5rem;
-
-  /* Desktop font-size */
-  --title-font-size: 10rem;
-  --sub-title-font-size: 3.75rem;
-  --paragraph-font-size: 2.5rem;
-  --button-font-size: 2rem;
-
-  /* Mobile font-Size */
-  /* --title-font-size-mobile:5rem;
-    --sub-title-font-size-mobile:2.5rem;
-    --paragraph-font-size-mobile:2rem;
-    --button-font-size-mobile:1.75rem; */
-}
+    /* Colors */
+    --header-color: #a8c8bc;
+    --bgc-newsletter: #b86f52;
+    --button-color-light: #255957;
+    --button-color-dark: #f78764;
+    --text-color: #55545c;
+  
+    /* Fonts */
+    --title-font: "Righteous", "arial", "cursive";
+    --sub-title-font: "Roboto", "arial", "sans-serif";
+    --paragraph-font: "Roboto", "arial", "sans-serif";
+    --spacing: 2.5rem;
+  
+    /* Desktop font-size */
+    --title-font-size: 10rem;
+    --sub-title-font-size: 3.75rem;
+    --paragraph-font-size: 2.5rem;
+    --button-font-size: 2rem;
+  
+    /* Mobile font-Size */
+    /* --title-font-size-mobile:5rem;
+      --sub-title-font-size-mobile:2.5rem;
+      --paragraph-font-size-mobile:2rem;
+      --button-font-size-mobile:1.75rem; */
+  }
