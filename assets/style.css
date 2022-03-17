@@ -5,6 +5,9 @@
 }
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 :root {
   /* Colors */
@@ -14,26 +17,28 @@ body {
   --button-color-dark: #f78764;
   --text-color: #55545c;
   --background-color: #f0ece9;
+  --footer-color:#303030;
 
   /* Fonts */
   --title-font: "Righteous", "arial", "cursive";
   --sub-title-font: "Roboto", "arial", "sans-serif";
   --paragraph-font: "Roboto", "arial", "sans-serif";
   --paragraph-spacing: 1.875rem;
-
+  
   /* Desktop font-size */
-  --title-font-size: 5rem;
+  --title-font-size: 1.25rem;
   --sub-title-font-size: 2rem;
   --paragraph-font-size: 1.25rem;
   --button-font-size: 1rem;
-
+  
   /* Mobile font-Size */
   --title-font-size-mobile: 2.5rem;
   --sub-title-font-size-mobile: 1.25rem;
   --paragraph-font-size-mobile: 1rem;
   --button-font-size-mobile: 0.875rem;
+  --footer-font-size-mobile: 1rem;
+  --footer-copyright-size-mobile: 0.75rem;
 }
-
 /* Header */
 nav {
   height: 60px;
@@ -53,11 +58,10 @@ nav {
   width:50px;
   background-color: salmon;
   margin-left: 20rem;
-  margin-bottom:10px;
   display:flex;
   justify-content: center;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 .row{
   width:70%;/* taille par rapport à la position de son parent */
@@ -111,4 +115,87 @@ a {
 .social-media {
   text-align: center;
 }
+/* Main */
+.about{
+
+
+}
 /* About */
+.about h1{
+  font-family:"Righteous";
+  text-align:center;
+}
+.about p{
+  border:1px solid tomato;
+  text-align:center;
+}
+.about-group-photo{
+  height: 269px;
+  margin:0 auto;
+  text-align:center;
+}
+/* Footer */
+footer{
+  background-color:var(--footer-color);
+  padding-bottom:3.125rem;
+  color:var(--background-color);
+}
+.footer-container{
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.footer-logo{
+  width: 5.5rem;
+}
+footer p{
+  font-family: var(--sub-title-font);
+  font-size: var(--footer-font-size-mobile);
+  font-weight: lighter;
+}
+
+.footer-container p,
+.footer-social-medias li,
+.footer-nav li{
+  margin:0.75rem 0;
+}
+
+.footer-social-medias,
+.footer-nav{
+  list-style: none;
+}
+.footer-social-medias{
+  display:flex;
+}
+
+.footer-social-medias li{
+ margin-right: 1rem;
+}
+.footer-social-medias img{
+  width: 1.375rem;
+}
+.footer-nav li a{
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-size:var(--footer-font-size-mobile);
+  text-decoration: none;
+  color:
+}
+footer h3{
+  font-size:var(--footer-copyright-size-mobile);
+  font-family: var(--sub-title-font);
+  margin-top: 3rem;
+}
+
+/* Media queries footer Desktop*/
+@media screen and (min-width:500px){
+  .footer-logo{
+  width: 10rem;
+  }
+  footer p{
+  font-size:var(--paragraph-font-size);
+  }
+  .footer-social-medias img{
+      width: 2.75rem;
+  }
+}
