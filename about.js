@@ -1,10 +1,7 @@
 // alert("coucou");
 const btnBurger = document.querySelector(".container");
 
-btnBurger.forEach(btn => {
-    btn.addEventListener("click",()=>{
-        console.log("hello");
-        btn.classList.toggle("active");
+    btnBurger.addEventListener(("click"),() => {
+        btnBurger.classList.toggle("active");
     })
 
-} );
