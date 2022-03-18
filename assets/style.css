@@ -115,25 +115,62 @@ a {
 .social-media {
   text-align: center;
 }
-/* Main */
-.about{
 
-
+/* Section About */
+.about {
+  margin-bottom: 3.5rem;
 }
-/* About */
 .about h1{
   font-family:"Righteous";
   text-align:center;
+  margin-bottom:1.125rem;
+  color:var(--button-color-light);
+  font-family: var(--title-font);
+  color:var(--button-color-light);
 }
 .about p{
-  border:1px solid tomato;
+  /* border:1px solid tomato; */
   text-align:center;
+  font-size:var(--paragraph-font-size-mobile);
+  font-family: var(--paragraph-font);
+  margin-bottom:1.125rem;
 }
 .about-group-photo{
-  height: 269px;
-  margin:0 auto;
-  text-align:center;
+  background-image: url("../assets/images/about-picture-group.jpg");
+  background-color:var(--header-color);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 16.813rem;
+  /* margin:0 auto;
+  text-align:center; */
+
 }
+/* Section producters */
+.about-producer-identity,
+.guillaume-Miche,
+.marie-Toupuissant,
+.stephanie-Caussier{
+  text-align: center;
+}
+.about-producer-identity img,
+.guillaume-Miche img{
+  margin-bottom:2rem;
+}
+.about-producer-identity h2,
+.guillaume-Miche h2{
+  margin-bottom:1rem;
+  font-family: var(--sub-title-font);
+
+}
+.about-producer-identity p,
+.guillaume-Miche p{
+  margin-bottom: 3rem;
+  font-size:var(--paragraph-font-size-mobile);
+  font-family: var(--paragraph-font);
+
+}
+
 /* Footer */
 footer{
   background-color:var(--footer-color);
