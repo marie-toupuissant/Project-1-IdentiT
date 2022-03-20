@@ -3,11 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color:var(--button-color-light);
 }
 :root {
   /* Colors */
@@ -40,46 +42,62 @@ body {
   --footer-copyright-size-mobile: 0.75rem;
 }
 /* Header */
-nav {
-  height: 60px;
-  border: 1px solid tomato;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.header{
+  border-bottom: 1px solid #E2E8F0;
+  color:var(--header-color);
   background-color: var(--header-color);
 }
-.logo {
-  height: 40px;
-}
-.nav-logo {
-  margin: auto;
-  text-align: center;
-}
+nav a img{
+  height: 30px;
+  /* width:50px; */
 
-.container{
-  height:50px;
-  width:50px;
-  background-color: salmon;
-  margin-left: 20rem;
-  display:flex;
-  justify-content: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  padding: 1rem 1.5rem;
 }
-.row{
-  width:70%;/* taille par rapport à la position de son parent */
-  height: 0.15rem;
-  border-radius:5px;
-  background-color: #fff;
-  position: absolute;
-  transition:all .5s ease-in-out;
+.hamburger {
+  display: none;
 }
-.row:nth-child(1){
-  top:9px;
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--background-color);
 }
-.row:nth-child(2){
-  top:24px;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.row:nth-child(3){
-  top:39px;
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-weight: 700;
+  color: var(--background-color);
+  font-family: var(--title-font);
+  font-size:var(--title-font-size-mobile);
+  line-height:2.125rem;
+}
+
+.nav-link:hover{
+  color: var(--button-color-dark);
 }
 
 /* Animation button burger */
@@ -216,7 +234,49 @@ footer h3 {
   font-family: var(--sub-title-font);
   margin-top: 3rem;
 }
+/* Media queries header */
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+      left: 0;
+  }
+  .nav-link{
 
+      font-weight: 700;
+      color: var(--background-color);
+      font-family: var(--sub-title-font-size);
+      font-size:var(--title-font-size-mobile);
+      line-height:2.125rem;
+  }
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
 /* Media queries for Desktop*/
 /* Footer */
 @media screen and (min-width:500px){
@@ -238,11 +298,4 @@ footer h3 {
   .about{
  font-size:var(--title-font-size);
   }
-  /* main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2rem;
-} */
 }
