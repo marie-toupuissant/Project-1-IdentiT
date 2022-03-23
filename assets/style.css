@@ -1,16 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color:var(--button-color-light);
-}
 :root {
   /* Colors */
   --header-color: #a8c8bc;
@@ -32,14 +20,29 @@ body {
   --sub-title-font-size: 2rem;
   --paragraph-font-size: 1.25rem;
   --button-font-size: 1rem;
+  --footer-copyright-size:1rem;
   
   /* Mobile font-Size */
   --title-font-size-mobile: 2rem;
   --sub-title-font-size-mobile: 1.25rem;
-  --paragraph-font-size-mobile: 1rem;
+  --paragraph-font-size-mobile: 1.25rem;
   --button-font-size-mobile: 0.875rem;
-  --footer-font-size-mobile: 1rem;
-  --footer-copyright-size-mobile: 0.75rem;
+  --footer-font-size-mobile: 1.25rem;
+  --footer-copyright-size-mobile: 0.85rem;
+}
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /* Header */
 li {
@@ -56,8 +59,6 @@ a {
 }
 nav a img{
   height: 30px;
-  /* width:50px; */
-
 }
 .navbar {
   display: flex;
@@ -87,9 +88,9 @@ nav a img{
 .nav-item {
   margin-left: 5rem;
 }
+/* Pour l'alignement du Pays */
 
 .nav-link{
-  font-weight: 700;
   color: var(--background-color);
   font-family: var(--title-font);
   font-size:var(--title-font-size-mobile);
@@ -135,22 +136,23 @@ a {
 }
 
 /* Section About */
+#main-about {
+  color:var(--text-color);
+}
 .aboutaboutProducersGroup {
   margin-bottom: 3.5rem;
 }
 .aboutProducersGroup h1{
   text-align:center;
-  margin-bottom:1.125rem;
-  color:var(--button-color-light);
+  /* margin-bottom:1.125rem; */
   font-family: var(--title-font);
-  color:var(--button-color-light);
   font-size:var(--title-font-size-mobile);
 }
 .aboutProducersGroup p{
   text-align:center;
   font-size:var(--paragraph-font-size-mobile);
   font-family: var(--paragraph-font);
-  margin-bottom:1.125rem;
+  margin:1.125rem 0;
 }
 .about-group-photo-producer {
   background-image: url("../assets/images/producer.jpg");
@@ -164,9 +166,18 @@ a {
 }
 
 /* Section producers Info */
+.aboutProducersInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .about-producerCard {
   text-align: center;
   border:1px solid tomato;
+  width: 334px;
+  height: 511px;
 }
 .about-producerCard img {
   margin-bottom:2rem;
@@ -180,6 +191,7 @@ a {
   font-size:var(--paragraph-font-size-mobile);
   font-family: var(--paragraph-font);
   font-weight: 700;
+  color:var(--text-color);
 }
 
 /* Footer */
@@ -251,10 +263,8 @@ footer h3 {
       left: 0;
   }
   .nav-link{
-
-      font-weight: 700;
       color: var(--background-color);
-      font-family: var(--sub-title-font-size);
+      font-family: "Righteous";
       font-size:var(--title-font-size-mobile);
       line-height:2.125rem;
   }
@@ -278,8 +288,22 @@ footer h3 {
   }
 }
 /* Media queries for Desktop*/
-/* Footer */
 @media screen and (min-width:500px){
+  /* Section about */
+  .aboutProducersGroup{
+    height:414px;
+  }
+  .aboutProducersInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about-producerCard{
+    width: 500px;
+    height:700px;
+  }
+  /* Footer */
   .footer-logo{
   width: 10rem;
   }

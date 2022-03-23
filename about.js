@@ -30,7 +30,7 @@ function closeMenu() {
     const dataProducerInfo = [
         { 
             image: "assets/images/about-picture.png",
-            title: "Briac Rousseau" ,
+            title: "Briac Rousseau",
             content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
         },
         { 
@@ -63,4 +63,18 @@ function closeMenu() {
         <p> ${aboutProducer.content}</p>`
         document.querySelector(".aboutProducersInfo").appendChild(producerCard);
     });
-    
+
+//     const dataFooter = [
+//         {
+//         image:"assets/images/footer-logo-light.svg",
+//         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas."
+//     }
+// ];
+//     dataFooterContent.forEach(footerCard =>{
+//         const footerCard = document.createElement("div");
+//         footerCard.classList.add("footer-logo");
+//         footerCard.innerHTML = 
+//         ` <img src = ${footerCard.image} alt="footer logo">
+//         <p> ${footerCard.content}</p>`
+//         document.querySelector(".footer-container").appendChild(footerCard);
+//     })
