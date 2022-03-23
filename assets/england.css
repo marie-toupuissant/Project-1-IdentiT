@@ -1,0 +1,116 @@
+/*Carousel for England*/
+#country-flex-display {
+  display: none;
+}
+
+#country-carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.country-carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.country-carousel-arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.country-carousel-arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.country-carousel-arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .country-carousel-arrow,
+  .light .country-carousel-arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+[id^="item"] {
+  display: none;
+}
+
+.country-carousel-item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("./images/country-carousel-england-item-1.jpg");
+  background-size: cover;
+}
+
+.country-carousel-item-2 {
+  background: url("./images/country-carousel-england-item-2.jpg");
+  background-size: cover;
+}
+.country-carousel-item-3 {
+  background: url("./images/country-carousel-england-item-3.jpg");
+  background-size: cover;
+}
+
+*:target ~ .country-carousel-item-1 {
+  opacity: 0;
+}
+
+#country-carousel-item-1:target ~ .country-carousel-item-1 {
+  opacity: 1;
+}
+
+#country-carousel-item-2:target ~ .country-carousel-item-2,
+#country-carousel-item-3:target ~ .country-carousel-item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+#country-carousel-description {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+/*Media queries*/
+@media screen and (min-width: 500px) {
+  #country-carousel-wrapper {
+    display: none;
+  }
+
+  #country-flex-display {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .country-flex-display-item {
+    width: 30%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
