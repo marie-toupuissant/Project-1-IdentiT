@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" href="assets/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="assets/images/footer-logo.svg" alt="logo IdentiT"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" onclick="dropDownMenu()" class="nav-link">Pays</a>
+                        <ul id="countryDropDownMenu" style="display:none">
+                            <li> Afrique du Sud</li>
+                            <li>Angleterre</li>
+                            <li>Argentine</li>
+                            <li>Japon</li>
+                            <li>Maroc</li>
+                        </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Click & Collect</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+     <main id="main-about">
+        <section class="aboutProducersGroup">
+            <div class="about-group-photo-producer"></div>
+            <h1>A propos</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus"</p>
+        </section>
+
+        <div class="container-aboutProducersInfo">
+        <section class="aboutProducersInfo"></section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo"src="assets/images/footer-logo-light.svg" alt="footer logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.</p>
+       
+        <ul class="footer-social-medias">
+            <li><a href="#"><img src="assets/images/facebook.svg" alt="logo-facebook"></a></li>
+            <li><a href="#"><img src="assets/images/Pinterest.svg" alt="logo-pinterest"></a></li>
+            <li><a href="#"><img src="assets/images/instagram.svg" alt="logo-instagram"></a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Pays</a></li>
+            <li><a href="#">Click & Collect</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+         <h3>© Copyright 2022 Identi'T. Tous droits réservés.</h3>
+        </div>
+    </footer>
+     
+      <script src="about.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
