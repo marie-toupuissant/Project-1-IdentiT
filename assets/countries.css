@@ -1,0 +1,173 @@
+:root {
+  /* Colors */
+  --header-color: #a8c8bc;
+  --bgc-newsletter: #b86f52;
+  --button-color-light: #255957;
+  --button-color-dark: #f78764;
+  --text-color: #55545c;
+
+  /* Fonts */
+  --title-font: "Righteous", "arial", "cursive";
+  --sub-title-font: "Roboto", "arial", "sans-serif";
+  --paragraph-font: "Roboto", "arial", "sans-serif";
+  --paragraph-spacing: 1.875rem;
+
+  /* Desktop font-size */
+  --title-font-size: 5rem;
+  --sub-title-font-size: 2rem;
+  --paragraph-font-size: 1.25rem;
+  --button-font-size: 1rem;
+
+  /* Mobile font-Size */
+  --title-font-size-mobile: 2.5rem;
+  --sub-title-font-size-mobile: 1.25rem;
+  --paragraph-font-size-mobile: 1rem;
+  --button-font-size-mobile: 0.875rem;
+}
+
+/*====================Reset document styles====================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*====================Titles====================*/
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size-mobile);
+}
+
+h2 {
+  font-family: var(--sub-title-font);
+  font-size: var(--sub-title-font-size-mobile);
+}
+
+/*====================Paragraphs====================*/
+p {
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-font-size-mobile);
+  line-height: var(--paragraph-spacing);
+  color: var(--text-color);
+}
+
+/*====================Presentation of the country====================*/
+#country-presentation {
+  text-align: center;
+}
+
+#country-name {
+  padding-top: 2rem;
+}
+
+#country-description {
+  padding: 2rem 3rem;
+}
+
+#country-click-collect-button {
+  background-color: #f78764;
+  height: 50px;
+  width: 160px;
+  font-size: var(--button-font-size-mobile);
+  font-family: var(--button-font);
+  text-transform: uppercase;
+  letter-spacing: var(--button-letter-spacing);
+  color: var(--button-font-color);
+  border: inherit;
+  margin-bottom: 3rem;
+}
+
+/*====================Tea rituals====================*/
+#country-tea-rituals-container {
+  text-align: center;
+}
+
+#country-tea-culture {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#country-landscape {
+  width: 70%;
+  height: auto;
+}
+
+#country-tea-culture-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*====================Pictograms detailing tea preparation====================*/
+#country-tea-preparation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.country-tea-preparation-item {
+  display: grid;
+  justify-items: center;
+}
+
+.country-tea-preparation-description {
+  text-align: center;
+}
+
+.country-tea-brewing-pic {
+  height: auto;
+  width: 70%;
+}
+
+/*==============================Media queries==============================*/
+@media screen and (min-width: 500px) {
+  /*==========Titles==========*/
+  h1 {
+    font-size: var(--title-font-size);
+  }
+
+  h2 {
+    font-size: var(--sub-title-font-size);
+  }
+
+  /*==========Titles==========*/
+  p {
+    font-size: var(--paragraph-font-size);
+  }
+
+  /*==========Presentation of the country==========*/
+  #country-click-collect-button {
+    font-size: var(--button-font-size);
+    width: 200px;
+  }
+
+  /*==========Tea rituals==========*/
+  #country-tea-rituals-container {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  #country-landscape {
+    width: 20%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  /*==========Pictograms detailing tea preparation==========*/
+  #country-tea-preparation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .country-tea-brewing-pic {
+    height: auto;
+    width: 90%;
+  }
+}
