@@ -1,0 +1,416 @@
+
+/* --- Root -- */
+
+:root {
+  /* Colors */
+  --header-color: #a8c8bc;
+  --bgc-newsletter: #b86f52;
+  --button-color-light: #255957;
+  --button-color-dark: #f78764;
+  --text-color: #55545c;
+  --background-color: #f0ece9;
+
+  /* Fonts */
+  --title-font: "Righteous", "arial", "cursive";
+  --sub-title-font: "Roboto", "arial", "sans-serif";
+  --paragraph-font: "Roboto", "arial", "sans-serif";
+
+  /* Spacing */
+  --paragraph-spacing-desktop: 1.875rem; /* 30px */
+  --paragraph-spacing-mobile: 1.625rem; /* 26 px */
+  --title-h1-bottom-padding-desktop: 2.5rem; /* 40px */
+  --title-h1-bottom-padding-mobile: 2.5rem; /* 50px */
+  --title-h4-bottom-padding-mobile: 0.2rem; 
+  --title-h4-bottom-padding-desktop: 0.15rem;
+
+  /* Margin Desktop */
+
+  --body-margin-desktop: 3 rem;
+
+  /* Margin Mobile */
+
+  --body-margin-mobile: 2.5rem;
+
+  /* Desktop font-size */
+  --title-font-size-desktop: 5rem;
+  --sub-title-font-size-desktop: 2rem;
+  --paragraph-font-size-desktop: 1.25rem;
+  --button-font-size-desktop: 1rem;
+
+  /* Mobile font-Size */
+  --title-font-size-mobile:2.5rem;
+  --sub-title-font-size-mobile:1.25rem;
+  --paragraph-font-size-mobile:1rem;
+  --button-font-size-mobile:0.875rem; 
+}
+
+/* --- clickAndCollect --- */
+
+/*----------------------------------------------------*/
+
+/* --- Reset default value --- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+      /* --- section-1-clickAndCollect --- */
+
+    section.clickAndCollect-first-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 6rem;
+      padding-top: 1rem;
+    }
+
+          /* --- img intro mobile --- */
+
+        img.clickAndCollect-intro-picture-mobile {
+          max-width: 100%;
+          max-height: auto;
+          }
+
+          /* --- img intro desktop --- */
+
+        img.clickAndCollect-intro-picture-desktop {
+          display: none;
+          }
+
+          /* --- h1 intro --- */
+
+        h1.clickAndCollect-main-title {
+          display: flex;
+          justify-content: center;
+          font-family: var(--title-font);
+          font-size: var(--title-font-size-mobile);
+          padding-bottom: var(--title-h1-bottom-padding-mobile);
+          color: var(--button-color-light);
+          padding-top: 5rem;
+
+        }
+
+          /* --- p intro --- */
+
+        p.clickAndCollect-intro-paragraph {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-family: var(--paragraph-font);
+          line-height: var(--paragraph-spacing-mobile);
+          color: var(--text-color);
+          font-size: var(--paragraph-font-size-mobile);
+          margin: 0 var(--body-margin-mobile);
+
+        }
+
+          /* --- img intro --- */
+
+        img.clickAndCollect-intro-picture {
+          max-width: 100%;
+          max-height: auto;
+
+        }
+
+      /*----------------------------------------------------*/
+    
+      /* --- section-2-container-clickAndCollect --- */
+
+    section.clickAndCollect-section-2-container {
+          
+    }
+
+        /* --- section-2-clickAndCollect --- */
+
+      section.clickAndCollect-shop {
+        margin: 0 var(--body-margin-mobile);
+        
+      }
+
+      /* --- section-2bis-clickAndCollect --- */
+      
+      section.clickAndCollect-shop-nb-2bis {
+        margin: 0 var(--body-margin-mobile);
+      }
+
+
+          /* --- div packshot --- */
+
+        div.clickAndCollect-packshot-div {
+          display: flex;
+          justify-content: center;
+        }
+        
+
+            /* --- img packshot --- */
+
+          img.clickAndCollect-packshot {
+            max-width: 100%;
+            height: auto;
+        
+          }
+        
+          /* --- div product --- */ 
+        
+        div.clickAndCollect-product-div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          -webkit-box-shadow: 0px 0px 19px 2px rgba(161,161,161,1);
+          -moz-box-shadow: 0px 0px 19px 2px rgba(161,161,161,1);
+          box-shadow: 0px 0px 19px 2px rgba(161,161,161,1);
+          padding: 1rem;
+
+        }
+
+            /* --- h4 product --- */
+
+          h4.clickAndCollect-product-name {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--sub-title-font);
+            font-size: var(--sub-title-font-size-mobile);
+            color: var(--text-color);
+            font-weight: 700;
+            padding-bottom: 1rem;
+          }
+
+            /* --- p product --- */
+
+          p.clickAndCollect-product-price {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: var(--paragraph-font);
+            line-height: var(--paragraph-spacing-mobile);
+            color: var(--text-color);
+            font-size: var(--paragraph-font-size-mobile);
+          }
+
+          /* --- div buy --- */
+
+        div.clickAndCollect-buy-div {
+          display: flex;
+          justify-content: center;
+          padding-top: 3rem;
+          padding-bottom: 5rem;
+
+        }
+
+            /* --- button buy --- */
+
+          button.clickAndCollect-buy {
+            font-family: var(--title-font);
+            font-size: var(--button-font-size-mobile);
+            font-weight: bold;
+            padding: 1rem;
+            background-color: var(--button-color-dark) ;
+            text-decoration: none;
+            border:inherit;
+            color: whitesmoke;
+          }
+          
+          button.clickAndCollect-buy:focus {
+            background-color: var(--bgc-newsletter);
+            border-color: var(--bgc-newsletter);
+          }
+          
+          button.clickAndCollect-buy:hover {
+            
+          }
+          
+          button.clickAndCollect-buy:active {
+            
+          }
+          
+      /*----------------------------------------------------*/
+
+      /* --- Media Query for Desktop --- */
+
+      @media screen and (min-width: 500px) {
+            
+          /* --- section-1-clickAndCollect --- */
+            
+        section.clickAndCollect-first-section {
+          padding-bottom: 6rem;
+          padding-top: 1rem;
+        } 
+        
+
+          /* --- img intro mobile --- */
+          
+        img.clickAndCollect-intro-picture-mobile {
+            display: none;
+          }
+
+
+          /* --- img intro desktop --- */
+
+        img.clickAndCollect-intro-picture-desktop {
+          display: flex;
+          justify-content: center;
+          max-width: 100%;
+          max-height: auto;
+          }
+
+
+          /* --- section-2-container-clickAndCollect --- */
+
+        section.clickAndCollect-section-2-container {
+          display : flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+
+        
+        
+        /* --- section-2-clickAndCollect --- */
+        
+        section.clickAndCollect-shop {
+         margin: 0 6rem; 
+        }
+        
+        
+        /* --- section-2bis-clickAndCollect --- */
+        
+        section.clickAndCollect-shop-nb-2bis {
+        
+        }
+        
+
+        /* --- div packshot --- */
+
+        div.clickAndCollect-packshot-div {
+        
+        }
+
+
+          /* --- button buy --- */
+
+        button.clickAndCollect-buy {
+          font-size: var(--sub-title-font-size-desktop);
+          
+        }
+
+
+          /* --- h1 intro --- */
+
+        h1.clickAndCollect-main-title {
+          font-size: var(--title-font-size-desktop);
+          padding-bottom: var(--title-h1-bottom-padding-desktop);
+        }
+
+
+          /* --- p intro --- */
+
+        p.clickAndCollect-intro-paragraph {
+          line-height: var(--paragraph-spacing-desktop);
+          font-size: var(--paragraph-font-size-desktop);
+          margin: 0 var(--body-margin-desktop);
+
+        }
+
+
+        /* --- div product --- */ 
+        
+        div.clickAndCollect-product-div {
+          padding: 2rem;
+        }
+
+
+        /* --- p product --- */
+
+        p.clickAndCollect-product-price {
+          line-height: var(--paragraph-spacing-desktop);
+          font-size: var(--paragraph-font-size-desktop);
+        }
+
+
+        /* --- h4 product --- */
+
+        h4.clickAndCollect-product-name {
+          font-size: var(--sub-title-font-size-desktop);
+          padding-bottom: 2rem;
+        }
+
+
+        button.clickAndCollect-buy {
+          font-size: var(--button-font-size-desktop);
+         
+        }
+
+      }
+
+
+
+
+
+
+
+
+
+/*  Ex simple square button
+
+.button-58 {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.button-58:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
+*/
+
+
