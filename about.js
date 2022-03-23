@@ -27,6 +27,19 @@ function closeMenu() {
     //     document.querySelector(".aboutProducersGroup").appendChild(producersGroup);
     // });
 
+    // DropDownMenu
+
+    function dropDownMenu() {
+        const countryDropDownMenu = document.getElementById("countryDropDownMenu");
+        if(countryDropDownMenu.style.display === "flex"){
+            countryDropDownMenu.style.display = "none";
+        
+        }
+        else{countryDropDownMenu.style.display = "flex";
+            countryDropDownMenu.style.flexDirection = "column";
+            countryDropDownMenu.style.color="#f0ece9";
+        }
+    };
     const dataProducerInfo = [
         { 
             image: "assets/images/about-picture.png",
