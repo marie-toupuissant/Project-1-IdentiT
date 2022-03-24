@@ -4,36 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style-hp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <script src="index.js"></script>
   <body>
     <header>
+      <!------------------------ NAVIGATION DEBUT -------------------------->
       <nav>
-        <img src="" alt="logo-identity" />
         <ul>
-          <li>Accueil</li>
-          <li>Pays</li>
-          <li>Click & collect</li>
-          <li>A propos</li>
-          <li>Contact</li>
-        </ul>
-        <ul>
-          <img src="" alt="logo-facebook" />
-          <img src="" alt="logo-instagram" />
-          <img src="" alt="logo-pinterest" />
+          <a href="index.html"
+            ><img
+              src="/assets/images/logo-identite.svg"
+              alt="logo-identity"
+              class="hp-logo"
+          /></a>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Pays</a>
+            <ul class="sous-menu">
+              <li><a href="south-africa.html">Afrique du Sud</a></li>
+              <li><a href="england.htlm">Angleterre</a></li>
+              <li><a href="argentina.html">Argentine</a></li>
+              <li><a href="japon.html">Japon</a></li>
+              <li><a href="morocco.html">Maroc</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
         </ul>
       </nav>
+
+      <!------------------------ NAVIGATION FIN -------------------------->
     </header>
+
     <main>
-      <section class="carousel-container">
-        <div class="carousel">
-          <div class="country-container">
-            <img src="assets/designdevunicorn.jpeg" alt="photo-japan" />
-            <button>Découvrez le Japon</button>
+      <!------------------------ section header DEBUT -------------------------->
+
+      <section class="hp-carousel-container">
+        <div class="hp-carousel">
+          <div class="hp-country-container">
+            <h1 class="hp-h1">make your day every day, with our japan tea</h1>
+            <button class="hp-button">Découvrez</button>
           </div>
-          <div class="country-container">
+          <!-- <div class="country-container">
             <img src="assets/designdevunicorn.jpeg" alt="photo-england" />
             <button>Découvrez l'Angleterre</button>
           </div>
@@ -48,50 +91,107 @@
           <div class="country-container">
             <img src="assets/designdevunicorn.jpeg" alt="photo-argentina" />
             <button>Découvrez l'Argentine</button>
-          </div>
+          </div> -->
         </div>
       </section>
-      <section>
-        <h1>identiT le thé qui vous ressemble!</h1>
-        <h3>ceci sera notre superbe accroche</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus,
-          ducimus!
-        </p>
-        <button>Découvrez nos thés</button>
-        <img src="assets/designdevunicorn.jpeg" alt="photo-lifestyle-tea" />
+
+      <!------------------------ section carousel click & collect FIN -------------------------->
+
+      <!------------------------ section about DEBUT -------------------------->
+
+      <section class="hp-container-about">
+        <div class="hp-about">
+          <h2 class="hp-h2">About good & proper tea</h2>
+          <p class="hp-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
+            mauris volutpat lacus nec mauris, egestas.
+          </p>
+          <button class="hp-discover-tea">Découvrez nos thés</button>
+        </div>
+
+        <div class="hp-image-about"></div>
       </section>
-      <section>
-        <div>
-          <h2>Newsletter</h2>
-          <p>
-            Lorem ipsum dolor sitvvvvv amet consectetur adipisicing elit. Totam,
-            impedit!
+
+      <!------------------------ section about FIN -------------------------->
+
+      <!------------------------ section click & collect DEBUT -------------------------->
+
+      <section class="hp-container-click-collect">
+        <div class="hp-click-collect">
+          <h2 class="hp-h2">Click & collect</h2>
+          <p class="hp-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
+            mauris volutpat lacus nec mauris, egestas. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec
+            mauris, egestas.
+          </p>
+          <button class="hp-button-click-collect">Réserver</button>
+        </div>
+
+        <div class="hp-image-click-collect"></div>
+      </section>
+
+      <!------------------------ section click & collect FIN -------------------------->
+
+      <!------------------------ section ritual DEBUT -------------------------->
+
+      <section class="hp-container-ritual">
+        <div class="hp-ritual">
+          <h2 class="hp-h2">About good & proper tea</h2>
+          <p class="hp-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
+            mauris volutpat lacus nec mauris, egestas.
+          </p>
+          <button class="hp-button-ritual">Les rituels</button>
+        </div>
+
+        <div class="hp-image-ritual"></div>
+      </section>
+
+      <!------------------------ section ritual FIN -------------------------->
+
+      <!------------------------ section newsletter DEBUT -------------------------->
+
+      <section class="hp-section-newsletter">
+        <div class="hp-newsletter">
+          <h2 class="hp-h2">La newsletter blablablablabla</h2>
+          <p class="hp-paragraph-newsletter">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
+            mauris volutpat lacus nec mauris, egestas.
           </p>
           <form action="get">
             <input placeholder="Adresse email" for="email" type="email" />
-            <button type="submit">Envoyer</button>
+            <button class="hp-newsletter-button" type="submit">Envoyer</button>
           </form>
         </div>
       </section>
+
+      <!------------------------ section newsletter FIN -------------------------->
     </main>
-    <footer>
-        <img src="" alt="logo-identity">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa.</p>
-        <ul>
-            <li>Accueil</li>
-            <li>Pays</li>
-            <li>Click & collect</li>
-            <li>A propos</li>
-            <li>Contact</li>
-          </ul>
-          <ul>
+
+    <!------------------------ FOOTER DEBUT -------------------------->
+
+    <footer class="hp-footer">
+      <div class="hp-footer-container">
+        <div class="hp-logo-footer">
+          <img src="" alt="logo-identity" />
+          <ul class="hp-icon-rs">
             <img src="" alt="logo-facebook" />
             <img src="" alt="logo-instagram" />
             <img src="" alt="logo-pinterest" />
           </ul>
-        </nav>
-        <p>c-tout droits réservés 2022/ IdentiT</p>
+        </div>
+        <ul>
+          <li>Accueil</li>
+          <li>Pays</li>
+          <li>Click & collect</li>
+          <li>A propos</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div><p class="hp-copyright">© IdentiT 2022</p></div>
     </footer>
+
+    <!------------------------ FOOTER FIN -------------------------->
   </body>
 </html>

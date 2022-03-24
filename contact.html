@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style-hp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <header>
+      <!------------------------ NAVIGATION DEBUT -------------------------->
+      <nav>
+        <ul>
+          <img
+            src="/assets/images/logo-identite.svg"
+            alt="logo-identity"
+            class="hp-logo"
+          />
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Pays</a>
+            <ul class="sous-menu">
+              <li><a href="#">Afrique du Sud</a></li>
+              <li><a href="#">Angleterre</a></li>
+              <li><a href="#">Argentine</a></li>
+              <li><a href="#">Japon</a></li>
+              <li><a href="#">Maroc</a></li>
+            </ul>
+          </li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Contact</a></li>
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="/assets/images/f_logo_RGB-Black_100.png"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+        </ul>
+      </nav>
+
+      <!------------------------ NAVIGATION FIN -------------------------->
+    </header>
+
+    <main>
+      <section class="hp-section-contact">
+        <div class="hp-contact">
+          <div class="hp-image-contact"></div>
+
+          <form
+            class="form-contact"
+            action="/page-traitement-donnees"
+            method="post"
+          >
+            <h2 class="hp-h2">N'hésitez pas à nous contacter !</h2>
+            <p class="hp-p-contact">
+              Un problème, une question, envie de nous envoyer un message
+              d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre
+              contact avec nous !
+            </p>
+            <div>
+              <label for="nom">Votre nom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Martin"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Votre e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="monadresse@mail.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="sujet">Quel est le sujet de votre message ?</label>
+              <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>
+                  Choisissez le sujet de votre message
+                </option>
+                <option value="probleme-compte">
+                  Problème avec mon compte
+                </option>
+                <option value="question-produit">
+                  Question à propos d’un produit
+                </option>
+                <option value="suivi-commande">Suivi de ma commande</option>
+                <option value="autre">Autre...</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Votre message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Bonjour, je vous contacte car...."
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button class="hp-contact-button" type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!------------------------ FOOTER DEBUT -------------------------->
+
+    <footer class="hp-footer">
+      <div class="hp-footer-container">
+        <div class="hp-logo-footer">
+          <img src="" alt="logo-identity" />
+          <ul class="hp-icon-rs">
+            <img src="" alt="logo-facebook" />
+            <img src="" alt="logo-instagram" />
+            <img src="" alt="logo-pinterest" />
+          </ul>
+        </div>
+        <ul>
+          <li>Accueil</li>
+          <li>Pays</li>
+          <li>Click & collect</li>
+          <li>A propos</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div><p class="hp-copyright">© IdentiT 2022</p></div>
+    </footer>
+
+    <!------------------------ FOOTER FIN -------------------------->
+  </body>
+</html>
