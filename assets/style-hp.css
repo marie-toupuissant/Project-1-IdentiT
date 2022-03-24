@@ -1,0 +1,950 @@
+:root {
+  /* Colors */
+  --header-color: #a8c8bc;
+  --bgc-newsletter: #b86f52;
+  --button-color-light: #255957;
+  --button-color-dark: #f78764;
+  --text-color: #55545c;
+  --background-color: #f0ece9;
+
+  /* Fonts */
+  --title-font: "Righteous", "arial", "cursive";
+  --sub-title-font: "Roboto", "arial", "sans-serif";
+  --paragraph-font: "Roboto", "arial", "sans-serif";
+  --paragraph-spacing: 1.875rem;
+
+  /* Desktop font-size */
+  --title-font-size: 5rem;
+  --sub-title-font-size: 2rem;
+  --paragraph-font-size: 1.25rem;
+  --button-font-size: 1rem;
+
+  /* Mobile font-Size */
+  --title-font-size-mobile: 2.5rem;
+  --sub-title-font-size-mobile: 1.25rem;
+  --paragraph-font-size-mobile: 1rem;
+  --button-font-size-mobile: 0.875rem;
+
+  /* main */
+  --margin-right: 3rem;
+  --margin-left: 3rem;
+  --margin-bottom: 3rem;
+  --hauteur-menu: 60px;
+
+  /* button*/
+  --button-font: "Righteous", "arial", "cursive";
+  --button-font-color: #f0ece9;
+  --button-letter-spacing: 0.2rem;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* // Mobile device */
+@media (max-width: 500px) {
+  main {
+    text-align: center;
+  }
+
+  .hp-h1 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size-mobile);
+    text-transform: uppercase;
+    margin: var(--margin-right) var(--margin-left);
+    color: #f0ece9;
+  }
+
+  .hp-h2 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size-mobile);
+  }
+
+  .hp-p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+    text-align: center;
+  }
+
+  /*********************************** NAVIGATION DEBUT ***********************************/
+
+  nav {
+    display: none;
+  }
+
+  ul {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+  }
+
+  /*********************************** NAVIGATION FIN ***********************************/
+
+  /*********************************** SECTION HEADER DEBUT ***********************************/
+
+  div .hp-country-container {
+    height: 516px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("/assets/images/photo_caroussel_japan.png");
+    background-color: #a8c8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hp-button {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+  /*********************************** SECTION HEADER FIN ***********************************/
+
+  /*********************************** SECTION CLICK COLLECT CAROUSEL DEBUT ***********************************/
+
+  section .hp-container-carousel-click-collect {
+    background-color: #f4ece6;
+    width: 100%;
+  }
+
+  .hp-carousel-click-collect {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  div .hp-image-carousel {
+    background-image: url("/assets/images/JasminePearls_Front_WR_540x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    margin: none;
+    box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+    -webkit-box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+    -moz-box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+  }
+
+  /*********************************** SECTION CLICK COLLECT CAROUSEL FIN ***********************************/
+
+  /*********************************** SECTION ABOUT DEBUT ***********************************/
+
+  .hp-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f78764;
+  }
+
+  .hp-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-image-about {
+    background-image: url("/assets/images/img-about-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  /*********************************** SECTION ABOUT FIN ***********************************/
+
+  /*********************************** SECTION CLICK & COLLECT DEBUT ***********************************/
+
+  .hp-container-click-collect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hp-click-collect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    max-width: 100%;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-image-click-collect {
+    background-image: url("/assets/images/img-click-collect-mobile.jpg");
+    background-image: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+
+  .hp-button-click-collect {
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: var(--button-font-color);
+    border: inherit;
+  }
+
+  .hp-button-click-collect:hover {
+    color: #f78764;
+  }
+
+  .hp-image-click-collect {
+    background-image: url("/assets/images/img-click-collect-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+
+  /*********************************** SECTION CLICK & COLLECT FIN ***********************************/
+
+  /*********************************** SECTION RITUAL DEBUT ***********************************/
+
+  .hp-container-ritual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a8c8bc;
+  }
+
+  .hp-ritual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    max-width: 100%;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-button-ritual {
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: var(--button-font-color);
+    border: inherit;
+  }
+
+  .hp-button-ritual:hover {
+    color: #f78764;
+  }
+
+  .hp-image-ritual {
+    background-image: url("/assets/images/img-ritual-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+  /*********************************** SECTION RITUAL FIN ***********************************/
+
+  /*********************************** SECTION NEWSLETTER DEBUT ***********************************/
+
+  .hp-section-newsletter {
+    background-color: #f78764;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .hp-newsletter {
+    margin: var(--margin-right) var(--margin-left);
+    display: block;
+    height: 300px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hp-paragraph-newsletter {
+    font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hp-newsletter-button {
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    height: 40px;
+    width: 100%;
+    border: inherit;
+    background-color: black;
+    color: white;
+  }
+
+  .hp-newsletter-button:hover {
+    color: #f78764;
+  }
+
+  ::placeholder {
+    padding: 0rem 0rem 0rem 0.75rem;
+  }
+
+  input {
+    height: 40px;
+    width: 100%;
+    border: inherit;
+  }
+  /*********************************** SECTION NEWSLETTER FIN ***********************************/
+
+  /*********************************** SECTION FOOTER DEBUT ***********************************/
+
+  .hp-footer {
+    background-color: #303030;
+    color: #f0ece9;
+  }
+
+  div.hp-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: var(--margin-right) var(--margin-left);
+  }
+}
+/*********************************** SECTION FOOTER FIN ***********************************/
+
+/* // Desktop device */
+@media (min-width: 500px) {
+  .hp-h1 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size-mobile);
+    text-transform: uppercase;
+    margin: var(--margin-right) var(--margin-left);
+    color: black;
+  }
+
+  .hp-h2 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size);
+  }
+
+  .hp-p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-spacing);
+    text-align: center;
+  }
+
+  /*********************************** NAVIGATION DEBUT ***********************************/
+
+  .hp-logo {
+    height: 2rem;
+    width: 12rem;
+  }
+
+  nav {
+    background-color: #255957;
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+  }
+  nav > ul {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    height: var(--hauteur-menu);
+  }
+
+  nav ul {
+    align-items: center;
+
+    list-style-type: none;
+  }
+
+  nav > ul > li {
+    background-color: #255957;
+    position: relative;
+    height: 100%;
+    flex: 1;
+  }
+
+  nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-deroulant > a:after {
+    content: "❯";
+    font-size: 1rem;
+    margin-left: 7px;
+    display: inline-block;
+  }
+
+  .sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: #255957;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .sous-menu > li > a {
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  nav > ul > li:hover > a {
+    color: #a8c8bc;
+  }
+
+  .sous-menu > li:hover {
+    background-color: #a8c8bc;
+  }
+
+  .sous-menu > li:hover > a {
+    color: #255957;
+  }
+
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  .menu-deroulant:hover > a:after {
+    animation: rotationFleche 0.2s linear forwards;
+  }
+  @keyframes apparitionSousMenu {
+    0% {
+      border-top: 3px solid #a8c8bc;
+    }
+    30% {
+      /* box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3); */
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #a8c8bc;
+      /* box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3); */
+    }
+  }
+
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+  }
+
+  .hp-facebook-icon {
+    height: 1.6rem;
+  }
+
+  /*********************************** NAVIGATION FIN ***********************************/
+
+  /*********************************** SECTION COUNTRY HEADER DEBUT ***********************************/
+
+  div .hp-country-container {
+    height: 516px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    margin-bottom: 8rem;
+    background-image: url("/assets/images/map-countries.svg");
+    background-color: #f0ece9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hp-button {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  /*********************************** SECTION COUNTRY HEADER FIN ***********************************/
+
+  /*********************************** SECTION CLICK & COLLECT CAROUSEL DEBUT ***********************************/
+
+  section .hp-container-carousel-click-collect {
+    background-color: #f4ece6;
+  }
+
+  .hp-carousel-click-collect {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  div .hp-image-carousel {
+    background-image: url("/assets/images/JasminePearls_Front_WR_540x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 200px;
+    box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+    -webkit-box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+    -moz-box-shadow: -10px 14px 25px -8px rgba(85, 84, 92, 0.37);
+  }
+
+  /*********************************** SECTION CLICK & COLLECT CAROUSEL FIN ***********************************/
+
+  /*********************************** SECTION ABOUT DEBUT ***********************************/
+
+  .hp-container-about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #f78764;
+  }
+
+  .hp-about {
+    margin: var(--margin-right) var(--margin-left);
+    display: block;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.hp-image-lifestyle {
+    margin-top: 0rem;
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+  }
+
+  .hp-image-about {
+    background-image: url("/assets/images/img-about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 890px;
+  }
+
+  /*********************************** SECTION ABOUT FIN ***********************************/
+
+  /*********************************** SECTION CLICK & COLLECT DEBUT ***********************************/
+
+  .hp-container-click-collect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 8rem 0rem 8rem 0rem;
+  }
+
+  .hp-click-collect {
+    margin: var(--margin-right) var(--margin-left);
+    display: block;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hp-image-click-collect {
+    margin: 3rem 3rem 0rem 0rem;
+  }
+
+  .hp-image-click-collect {
+    background-image: url("/assets/images/img-click-collect.jpg");
+    height: 540px;
+    width: 890px;
+  }
+
+  .hp-button-click-collect {
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: var(--button-font-color);
+    border: inherit;
+  }
+
+  .hp-button-click-collect:hover {
+    color: #f78764;
+  }
+
+  /*********************************** SECTION CLICK & COLLECT FIN ***********************************/
+
+  /*********************************** SECTION RITUAL DEBUT ***********************************/
+
+  .hp-container-ritual {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #a8c8bc;
+  }
+
+  .hp-ritual {
+    margin: var(--margin-right) var(--margin-left);
+    display: block;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hp-button-ritual {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button-ritual:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  .hp-image-ritual {
+    background-image: url("/assets/images/im-ritual.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 890px;
+  }
+  /*********************************** SECTION RITUAL FIN ***********************************/
+
+  /*********************************** SECTION NEWSLETTER DEBUT ***********************************/
+
+  .hp-section-newsletter {
+    background-color: #f78764;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  div.hp-newsletter {
+    margin: var(--margin-right) var(--margin-left);
+    color: black;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hp-paragraph-newsletter {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+    padding-right: 1rem;
+    text-align: left;
+    width: 30rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hp-newsletter-button {
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    height: 40px;
+    width: 160px;
+    border: inherit;
+    background-color: black;
+    color: white;
+  }
+
+  .hp-newsletter-button:hover {
+    color: #f78764;
+  }
+
+  input {
+    height: 40px;
+    width: 300px;
+    border: inherit;
+    padding: 0%;
+  }
+
+  ::placeholder {
+    padding: 0rem 0rem 0rem 0.75rem;
+  }
+  /*********************************** SECTION NEWSLETTER FIN ***********************************/
+
+  /*********************************** PAGE CONTACT DEBUT ***********************************/
+
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+  }
+
+  form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+
+  form div > input,
+  form div > select,
+  form div > textarea {
+    background: #ffd9d9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  form div > input,
+  form div > select {
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==");
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+  }
+
+  form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+  }
+
+  form div > input::placeholder,
+  form div > textarea::placeholder {
+    color: white;
+  }
+
+  form div > select:invalid {
+    color: white;
+  }
+
+  form div > select option {
+    background: white;
+    color: black;
+  }
+
+  form div:last-child {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .hp-p-contact {
+    font-family: var(--paragraph-font);
+  }
+
+  .hp-image-contact {
+    background-image: url("/assets/images/photo-lifestyle-tea\ 1.jpg");
+    height: 600px;
+    width: 890px;
+    background-size: cover;
+    background-position: no-repeat;
+  }
+
+  .hp-section-contact {
+    background-color: #f0ece9;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  div.hp-contact {
+    color: black;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hp-paragraph-newsletter {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+    padding-right: 1rem;
+    text-align: left;
+    width: 30rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  .form-contact {
+    margin: var(--margin-right) var(--margin-left);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hp-contact-button {
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    height: 40px;
+    width: 160px;
+    border: inherit;
+    background-color: black;
+    color: white;
+  }
+
+  .hp-contact-button:hover {
+    color: #f78764;
+  }
+
+  .input-contact {
+    height: 40px;
+    width: 800px;
+    border: inherit;
+    padding: 0%;
+  }
+  ::placeholder {
+    padding: 0rem 0rem 0rem 0.75rem;
+  }
+
+  /*********************************** PAGE CONTACT FIN ***********************************/
+
+  .hp-footer {
+    background-color: black;
+    color: #f0ece9;
+  }
+
+  div.hp-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .hp-footer li {
+    display: flex;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  .hp-copyright {
+    text-align: left;
+    font-size: 0.9rem;
+    background-color: grey;
+    padding-left: 2rem;
+  }
+}
