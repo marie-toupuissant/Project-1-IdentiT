@@ -1,0 +1,65 @@
+<!-- section-1-clickAndCollect  -->
+      
+      <section class="clickAndCollect-first-section">
+        
+        <!-- h1 intro  -->
+        
+        <h1 class="clickAndCollect-main-title">
+          Click & Collect
+        </h1>
+        
+        <!-- p intro  -->
+        
+        <p class="clickAndCollect-intro-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatum commodi. Quas dignissimos assumenda ipsa.
+        </p>
+        
+        <!-- img intro -->
+        
+        <img class="clickAndCollect-intro-picture" src="/assets/images/Tea-variety.jpg" alt="clickAndCollect-intro-picture">
+      </section>
+      
+      
+      
+      <!-- section-2-clickAndCollect  -->
+      
+      <section class="clickAndCollect-shop">
+      
+        <!-- div packshot  -->
+        
+        <div class="clickAndCollect-packshot-div">
+          
+          <!-- img packshot  -->
+          
+          <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-1.jpg" alt="clickAndCollect-packshot"> 
+        </div>
+        
+        <!-- div product  -->
+        
+        <div class="clickAndCollect-product-div">
+          
+          <!-- h4 product  -->
+          
+          <h4 class="clickAndCollect-product-name">
+            Thé matcha origine Japon
+          </h4>
+          
+          <!-- p product -->
+          
+          <p class="clickAndCollect-product-price">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        
+        <!-- div buy -->
+        
+        <div class="clickAndCollect-buy-div">
+          
+          <!-- button buy -->
+          
+          <button class="clickAndCollect-buy">
+            Go Collect !
+          </button>
+        </div>
+        
+      </section>
