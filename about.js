@@ -17,9 +17,10 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-    // DropDownMenu
+    // DropDownMenu button pays
 
     function dropDownMenu() {
+    
         const countryDropDownMenu = document.getElementById("countryDropDownMenu");
         if(countryDropDownMenu.style.display === "flex"){
             countryDropDownMenu.style.display = "none";
@@ -30,6 +31,7 @@ function closeMenu() {
             countryDropDownMenu.style.color="#f0ece9";
         }
     };
+
  // Manipulation DOM section Producers group
 
     const dataProducerInfo = [
