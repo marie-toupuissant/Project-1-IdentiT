@@ -1,6 +1,6 @@
 
 :root {
-  /* Colors */
+  /*----- Root Colors -----*/
   --header-color: #a8c8bc;
   --bgc-newsletter: #b86f52;
   --button-color-light: #255957;
@@ -9,20 +9,20 @@
   --background-color: #f0ece9;
   --footer-color:#303030;
 
-  /* Fonts */
+  /*----- Fonts -----*/
   --title-font: "Righteous", "arial", "cursive";
   --sub-title-font: "Roboto", "arial", "sans-serif";
   --paragraph-font: "Roboto", "arial", "sans-serif";
   --paragraph-spacing: 1.875rem;
   
-  /* Desktop font-size */
+  /*----- Desktop font-size -----*/
   --title-font-size: 1.25rem;
   --sub-title-font-size: 2rem;
   --paragraph-font-size: 1.25rem;
   --button-font-size: 1rem;
   --footer-copyright-size:1rem;
   
-  /* Mobile font-Size */
+  /*----- Mobile font-Size ----- */
   --title-font-size-mobile: 2rem;
   --sub-title-font-size-mobile: 1.25rem;
   --paragraph-font-size-mobile: 1.25rem;
@@ -30,7 +30,8 @@
   --footer-font-size-mobile: 1.25rem;
   --footer-copyright-size-mobile: 0.85rem;
 }
-/* Reset */
+
+/*----- Reset -----*/
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +45,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-/* Header */
+/*----- Header -----*/
 li {
   list-style: none;
 }
@@ -63,7 +64,7 @@ nav a img{
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem 1.5rem;
 }
 .hamburger {
@@ -82,26 +83,37 @@ nav a img{
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav-item {
   margin-left: 5rem;
 }
-/* Pour l'alignement du Pays */
+/*----- Pour l'alignement du li Pays -----*/
 
+.nav-item ul li {
+  margin: 10px 0; /* marge sur les li de Pays */
+}
+
+#countryDropDownMenu 
+li{
+  font-family:"Righteous";
+  text-align: center;
+}
 .nav-link{
   color: var(--background-color);
   font-family: var(--title-font);
-  font-size:var(--title-font-size-mobile);
+  font-size:var(--title-font-size);
   line-height:2.125rem;
 }
-
+ a:visited {
+  color:var(--background-color);
+}
 .nav-link:hover{
   color: var(--button-color-dark);
 }
 
-/* Animation button burger */
+/*----- Animation button burger -----*/
 .container.active .row:nth-child(1){
   top: 18px;
   transform:rotate(135deg);
@@ -135,7 +147,7 @@ a {
   text-align: center;
 }
 
-/* Section About */
+/*----- Section About ------*/
 #main-about {
   color:var(--text-color);
 }
@@ -144,9 +156,9 @@ a {
 }
 .aboutProducersGroup h1{
   text-align:center;
-  /* margin-bottom:1.125rem; */
   font-family: var(--title-font);
   font-size:var(--title-font-size-mobile);
+  margin-top: 3rem;
 }
 .aboutProducersGroup p{
   text-align:center;
@@ -161,11 +173,9 @@ a {
   background-position:center;
   background-size: cover;
   height: 16.813rem;
-  /* margin:0 auto;
-  text-align:center; */
 }
 
-/* Section producers Info */
+/*----- Section producers Info -----*/
 .aboutProducersInfo{
   display: flex;
   flex-direction: column;
@@ -179,7 +189,7 @@ a {
   height: 31.938rem;
 }
 .about-producerCard img {
-  margin-bottom:2rem;
+  margin:2rem;
 }
 .about-producerCard h2 {
   margin-bottom:1rem;
@@ -191,7 +201,7 @@ a {
   font-family: var(--paragraph-font);
   color:var(--text-color);
 }
-/* Footer */
+/*----- Footer -----*/
 footer {
   background-color:var(--footer-color);
   padding-bottom:3.125rem;
@@ -243,18 +253,22 @@ footer h3 {
   font-family: var(--sub-title-font);
   margin-top: 3rem;
 }
-/* Media queries header */
+/*----- Media queries header -----*/
 @media only screen and (max-width: 768px) {
   .nav-menu {
-      position: fixed;
+      position: absolute; /* changement en position absolute à la place de fixed */
       left: -100%;
       top: 5rem;
       flex-direction: column;
       width: 100%;
-      text-align: center;
       transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      background-color: rgba(49, 56, 53, 0.794); /* ajout de la couleur de fond du menu déroulant */
+      top: 67px; /* ajout d'un top à 67px */
+  }
+  .nav-menu li { 
+    text-align: center; /* centrer les li - Accueil, Pays etc... */
+    width: 100%; /*largeur des li - Accueil, Pays etc... */
   }
   .nav-menu.active {
       left: 0;
@@ -262,7 +276,7 @@ footer h3 {
   .nav-link{
       color: var(--background-color);
       font-family: "Righteous";
-      font-size:var(--title-font-size-mobile);
+      font-size:var(--title-font-size);
       line-height:2.125rem;
   }
   .nav-item {
@@ -284,7 +298,7 @@ footer h3 {
       transform: translateY(-8px) rotate(-45deg);
   }
 }
-/* Media queries for Desktop*/
+/* ---- -Media queries for Desktop ------*/
 @media screen and (min-width:500px){
   /* Section about */
   .aboutProducersGroup{
@@ -298,9 +312,9 @@ footer h3 {
   }
   .about-producerCard{
     width: 500px;
-    height:700px;
+    height:500px;
   }
-  /* Footer */
+  /* ----- Footer ----- */
   .footer-logo{
   width: 10rem;
   }
