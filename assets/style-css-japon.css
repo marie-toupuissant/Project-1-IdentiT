@@ -1,0 +1,759 @@
+:root {
+  /* Colors */
+  --header-color: #a8c8bc;
+  --bgc-newsletter: #b86f52;
+  --button-color-light: #255957;
+  --button-color-dark: #f78764;
+  --text-color: #55545c;
+  --background-color: #f0ece9;
+  --footer-color: #303030;
+
+  /* Fonts */
+  --title-font: "Righteous", "arial", "cursive";
+  --sub-title-font: "Roboto", "arial", "sans-serif";
+  --paragraph-font: "Roboto", "arial", "sans-serif";
+  --paragraph-spacing: 1.875rem;
+
+  /* Desktop font-size */
+  --title-font-size: 5rem;
+  --sub-title-font-size: 2rem;
+  --paragraph-font-size: 1.25rem;
+  --button-font-size: 1rem;
+  --footer-copyright-size: 1rem;
+
+  /* Mobile font-Size */
+  --title-font-size-mobile: 2.5rem;
+  --sub-title-font-size-mobile: 1.25rem;
+  --paragraph-font-size-mobile: 1rem;
+  --footer-font-size-mobile: 1.25rem;
+  --button-font-size-mobile: 0.875rem;
+  --footer-copyright-size-mobile: 0.85rem;
+
+  /* main */
+  --margin-right: 3rem;
+  --margin-left: 3rem;
+  --margin-bottom: 3rem;
+  --hauteur-menu: 60px;
+
+  /* button*/
+  --button-font: "Righteous", "arial", "cursive";
+  --button-font-color: #f0ece9;
+  --button-letter-spacing: 0.2rem;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* // Mobile device */
+@media (max-width: 500px) {
+  main {
+    text-align: center;
+  }
+
+  .hp-h1 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size-mobile);
+    text-transform: uppercase;
+    margin: var(--margin-right) var(--margin-left);
+    color: #f0ece9;
+  }
+
+  .hp-h2 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size-mobile);
+  }
+
+  .hp-p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+    text-align: center;
+  }
+
+  /*********************************** NAVIGATION DEBUT ***********************************/
+
+  nav {
+    display: none;
+  }
+
+  ul {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size-mobile);
+    line-height: var(--paragraph-spacing);
+  }
+
+  /*********************************** NAVIGATION FIN ***********************************/
+
+  /*********************************** SECTION HEADER DEBUT ***********************************/
+
+  div .hp-country-container {
+    height: 516px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("/assets/images/img-header-japon.jpg");
+    background-color: #a8c8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hp-button {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+  /*********************************** SECTION HEADER FIN ***********************************/
+
+  /*********************************** SECTION ABOUT DEBUT ***********************************/
+
+  .hp-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f78764;
+  }
+
+  .hp-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  /*********************************** SECTION ABOUT FIN ***********************************/
+  /*********************************** SECTION PICTO DEBUT ***********************************/
+
+  div .img-picto {
+    background-image: url("/assets/images/tasse.svg");
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
+    background-color: #a8c8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sous-titre {
+    font-family: var(--sub-title-font);
+    font-size: var(--title-font-size-mobile);
+    margin-bottom: 0rem;
+  }
+
+  .hp-h3 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size-mobile);
+    margin-bottom: 0rem;
+  }
+
+  .hp-container-picto {
+    margin: var(--margin-left) var(--margin-right);
+    gap: 2rem;
+    background-color: #f0ece9;
+  }
+
+  .container-section {
+    margin: var(--margin-left) var(--margin-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hp-picto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+  }
+  /*********************************** SECTION PICTO FIN ***********************************/
+  /*********************************** SECTION RITUAL FIN ***********************************/
+
+  .hp-container-ritual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a8c8bc;
+  }
+
+  .hp-ritual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    max-width: 100%;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-button-ritual {
+    background-color: black;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: var(--button-font-color);
+    border: inherit;
+  }
+
+  .hp-button-ritual:hover {
+    color: #f78764;
+  }
+
+  .hp-image-ritual {
+    background-image: url("/assets/images/img-ritual-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+  }
+  /*********************************** SECTION RITUAL FIN ***********************************/
+
+  /*********************************** SECTION FOOTER DEBUT ***********************************/
+
+  /*----- Footer -----*/
+  footer {
+    background-color: var(--footer-color);
+    padding-bottom: 3.125rem;
+    color: var(--background-color);
+  }
+  .footer-container {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+  .footer-logo {
+    width: 5.5rem;
+  }
+  footer p {
+    font-family: var(--sub-title-font);
+    font-size: var(--footer-font-size-mobile);
+  }
+  .footer-container p,
+  .footer-social-medias li,
+  .footer-nav li {
+    margin: 1.5rem 0;
+  }
+  .footer-social-medias,
+  .footer-nav {
+    list-style: none;
+  }
+  .footer-social-medias {
+    display: flex;
+  }
+  .footer-social-medias li {
+    margin-right: 1rem;
+  }
+  .footer-social-medias img {
+    width: 1.375rem;
+  }
+  .footer-nav li a {
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: var(--footer-font-size-mobile);
+    text-decoration: none;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+  }
+  .footer-nav li a:visited {
+    color: var(--background-color);
+  }
+  footer h3 {
+    font-size: var(--footer-copyright-size-mobile);
+    font-family: var(--sub-title-font);
+    margin-top: 3rem;
+  }
+}
+/*********************************** SECTION FOOTER FIN ***********************************/
+
+/* // Desktop device */
+@media (min-width: 500px) {
+  .hp-h1 {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size-mobile);
+    text-transform: uppercase;
+    margin: var(--margin-right) var(--margin-left);
+    color: white;
+  }
+
+  .hp-h2 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size);
+  }
+
+  .hp-p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-spacing);
+    text-align: center;
+  }
+
+  /*********************************** NAVIGATION DEBUT ***********************************/
+
+  .hp-logo {
+    height: 2rem;
+    width: 12rem;
+  }
+
+  nav {
+    background-color: #255957;
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+  }
+  nav > ul {
+    font-family: var(--title-font);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    height: var(--hauteur-menu);
+  }
+
+  nav ul {
+    align-items: center;
+
+    list-style-type: none;
+  }
+
+  nav > ul > li {
+    background-color: #255957;
+    position: relative;
+    height: 100%;
+    flex: 1;
+  }
+
+  nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-deroulant > a:after {
+    content: "❯";
+    font-size: 1rem;
+    margin-left: 7px;
+    display: inline-block;
+  }
+
+  .sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: #255957;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .sous-menu > li > a {
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  nav > ul > li:hover > a {
+    color: #a8c8bc;
+  }
+
+  /* .sous-menu > li:hover {
+          background-color: #a8c8bc;
+        } */
+
+  .sous-menu > li:hover > a {
+    color: #a8c8bc;
+  }
+
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+  .menu-deroulant:hover > a:after {
+    animation: rotationFleche 0.2s linear forwards;
+  }
+  @keyframes apparitionSousMenu {
+    0% {
+      border-top: 3px solid #a8c8bc;
+    }
+    30% {
+      /* box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3); */
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #a8c8bc;
+      /* box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3); */
+    }
+  }
+
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+  }
+
+  .hp-facebook-icon {
+    height: 1.6rem;
+  }
+
+  /*********************************** NAVIGATION FIN ***********************************/
+
+  /*********************************** SECTION ABOUT DEBUT ***********************************/
+
+  .hp-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f78764;
+  }
+
+  .hp-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: var(--margin-right) var(--margin-left);
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  /*********************************** SECTION ABOUT FIN ***********************************/
+
+  /*********************************** SECTION HEADER DEBUT ***********************************/
+
+  div .hp-country-container {
+    height: 516px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("/assets/images/img-header-japon.jpg");
+    background-color: #a8c8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hp-button {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+  /*********************************** SECTION HEADER FIN ***********************************/
+
+  /*********************************** SECTION PICTO DEBUT ***********************************/
+
+  .hp-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img-picto01 {
+    background-image: url("/assets/images/tasse01.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto02 {
+    background-image: url("/assets/images/tasse02.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto03 {
+    background-image: url("/assets/images/tasse03.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto04 {
+    background-image: url("/assets/images/tasse04.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sous-titre {
+    font-family: var(--sub-title-font);
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    text-align: center;
+  }
+
+  .hp-h3 {
+    font-family: var(--sub-title-font);
+    font-size: var(--sub-title-font-size-mobile);
+    margin-bottom: 0rem;
+    text-align: center;
+  }
+
+  .hp-container-picto {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: var(--margin-left) var(--margin-right);
+    gap: 2rem;
+    background-color: #f0ece9;
+  }
+
+  .container-section {
+    margin: var(--margin-left) var(--margin-right);
+  }
+
+  .hp-picto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hp-discover-tea {
+    background-color: white;
+    height: 50px;
+    width: 240px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-discover-tea:hover {
+    color: #f78764;
+  }
+  /*********************************** SECTION PICTO FIN ***********************************/
+
+  /*********************************** SECTION RITUAL DEBUT ***********************************/
+
+  .hp-container-ritual {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #a8c8bc;
+  }
+
+  .hp-ritual {
+    margin: var(--margin-right) var(--margin-left);
+    display: block;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hp-button-ritual {
+    background-color: white;
+    height: 50px;
+    width: 160px;
+    font-size: var(--button-font-size-mobile);
+    font-family: var(--button-font);
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    color: black;
+    border: inherit;
+  }
+
+  .hp-button-ritual:hover {
+    color: #f78764;
+    cursor: pointer;
+  }
+
+  .hp-image-ritual {
+    background-image: url("/assets/images/im-ritual.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 890px;
+  }
+  /*********************************** SECTION RITUAL FIN ***********************************/
+
+  .hp-footer {
+    background-color: black;
+    color: #f0ece9;
+  }
+
+  div.hp-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .hp-footer li {
+    display: flex;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  .hp-copyright {
+    text-align: left;
+    font-size: 0.9rem;
+    background-color: grey;
+    padding-left: 2rem;
+  }
+
+  /* ----- Footer ----- */
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--paragraph-font);
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+
+  footer {
+    background-color: #303030;
+  }
+
+  .footer-nav {
+    padding-left: 0rem;
+  }
+
+  .footer-logo {
+    width: 10rem;
+  }
+
+  footer p {
+    font-size: var(--paragraph-font-size);
+  }
+
+  li {
+    list-style: none;
+    font-family: var(--title-font);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding-top: 1rem;
+  }
+
+  .footer-social-medias img {
+    width: 2rem;
+  }
+
+  .footer-social-medias {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    font-weight: lighter;
+  }
+}
