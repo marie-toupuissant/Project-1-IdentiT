@@ -467,12 +467,12 @@ body {
     color: #a8c8bc;
   }
 
-  .sous-menu > li:hover {
+  /* .sous-menu > li:hover {
     background-color: #a8c8bc;
-  }
+  } */
 
   .sous-menu > li:hover > a {
-    color: #255957;
+    color: #a8c8bc;
   }
 
   @keyframes rotationFleche {
@@ -517,7 +517,7 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     margin: 3rem;
@@ -529,7 +529,119 @@ body {
     background-size: contain;
   }
 
+  .hp-country-container {
+    /* position: relative; */
+  }
+
+  .rond-pays-argentine {
+    position: absolute;
+    background-image: url(/assets/images/japan-pointeur.svg);
+    background-size: cover;
+    top: 74%;
+    left: 30%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-argentine:hover {
+    background-image: url(/assets/images/japan-pointeur-hover.svg);
+    background-size: cover;
+    position: absolute;
+    top: 74%;
+    left: 30%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-angleterre {
+    position: absolute;
+    background-image: url(/assets/images/japan-pointeur.svg);
+    background-size: cover;
+    top: 20%;
+    left: 44%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-angleterre:hover {
+    background-image: url(/assets/images/japan-pointeur-hover.svg);
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-maroc {
+    position: absolute;
+    background-image: url(/assets/images/japan-pointeur.svg);
+    background-size: cover;
+    top: 34%;
+    left: 46%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-maroc:hover {
+    background-image: url(/assets/images/japan-pointeur-hover.svg);
+    background-size: cover;
+    position: absolute;
+    top: 34%;
+    left: 46;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-japon {
+    position: absolute;
+    background-image: url(/assets/images/japan-pointeur.svg);
+    background-size: cover;
+    top: 45%;
+    left: 78%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-japon:hover {
+    background-image: url(/assets/images/japan-pointeur-hover.svg);
+    background-size: cover;
+    position: absolute;
+    top: 45%;
+    left: 78%;
+    height: 4rem;
+    width: 3rem;
+  }
+  .rond-pays-afrique {
+    position: absolute;
+    background-image: url(/assets/images/japan-pointeur.svg);
+    background-size: cover;
+    top: 70%;
+    left: 50%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .rond-pays-afrique:hover {
+    background-image: url(/assets/images/japan-pointeur-hover.svg);
+    background-size: cover;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .hp-h1 {
+    background-color: #a8c8bc;
+    font-size: 1.5rem;
+    width: 50%;
+    color: black;
+  }
+
   .hp-button {
+    display: none;
+
     background-color: white;
     height: 50px;
     width: 160px;
@@ -550,21 +662,27 @@ body {
 
   /*********************************** SECTION CLICK & COLLECT CAROUSEL DEBUT ***********************************/
 
-  section .hp-container-carousel-click-collect {
-    background-color: #f4ece6;
+  .hp-container-carousel-click-collect {
+    margin: 0rem 5rem 0rem 5rem;
+  }
+
+  .hp-p02 {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-spacing);
+    text-align: left;
   }
 
   .hp-carousel-click-collect {
-    height: 600px;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    margin: var(--margin-right) var(--margin-left);
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
   }
 
   div .hp-image-carousel {
-    background-image: url("/assets/images/JasminePearls_Front_WR_540x.webp");
+    background-image: url("/assets/images/packshot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
