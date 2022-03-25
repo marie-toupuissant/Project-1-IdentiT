@@ -19,11 +19,10 @@
     />
     <title>Document</title>
   </head>
-  <script src="index.js"></script>
   <body>
     <header>
-      <!------------------------ NAVIGATION DEBUT -------------------------->
-      <nav>
+      <!------------------------ NAVIGATION DEBUT desktop-------------------------->
+      <nav class="nav-desktop">
         <ul>
           <a href="index.html"
             ><img
@@ -37,31 +36,53 @@
           <li class="menu-deroulant">
             <a href="#">Pays</a>
             <ul class="sous-menu">
-              <li><a href="south-africa.html">Afrique du Sud</a></li>
-              <li><a href="england.html">Angleterre</a></li>
-              <li><a href="argentina.html">Argentine</a></li>
-              <li><a href="japon.html">Japon</a></li>
-              <li><a href="morocco.html">Maroc</a></li>
+              <li><a href="afrique-sud.html">Afrique du Sud</a></li>
+              <li><a href="englandv2.html">Angleterre</a></li>
+              <li><a href="argentinav2.html">Argentine</a></li>
+              <li><a href="japonv2.html">Japon</a></li>
+              <li><a href="marocv2.html">Maroc</a></li>
             </ul>
           </li>
           <li><a href="clickAndCollect.html">Click & Collect</a></li>
           <li><a href="about.html">A propos</a></li>
           <li><a href="contact.html">Contact</a></li>
           <img
-            src="/assets/images/f_logo_RGB-Black_100.png"
+            src="/assets/images/f_logo_RGB-White_58.png"
             alt="logo-facebook"
             class="hp-facebook-icon"
           />
           <img
-            src="/assets/images/f_logo_RGB-Black_100.png"
+            src="/assets/images/instagram.svg"
             alt="logo-facebook"
             class="hp-facebook-icon"
           />
           <img
-            src="/assets/images/f_logo_RGB-Black_100.png"
+            src="/assets/images/Pinterest.svg"
             alt="logo-facebook"
             class="hp-facebook-icon"
           />
+        </ul>
+      </nav>
+
+      <!------------------------ NAVIGATION DEBUT mobile -------------------------->
+
+      <nav class="top-nav">
+        <div>
+          <img
+            class="logo-menu-mobile"
+            src="assets/images/footer-logo-light.svg"
+            alt=""
+          />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li>Pays</li>
+          <li>Click & collect</li>
+          <li>A propos</li>
+          <li>Contact</li>
         </ul>
       </nav>
 
@@ -74,14 +95,21 @@
       <section class="hp-carousel-container">
         <div class="hp-carousel">
           <div class="hp-country-container">
-            <div class="rond-pays-argentine"><a href="#"></a></div>
-            <div class="rond-pays-japon"><a href="#"></a></div>
-            <div class="rond-pays-afrique"><a href="#"></a></div>
-            <div class="rond-pays-maroc"><a href="#"></a></div>
-            <div class="rond-pays-angleterre"><a href="#"></a></div>
+            <div class="rond-pays-argentine">
+              <a href="argentinav2.html"></a>
+            </div>
+            <div class="rond-pays-japon"><a href="japonv2.html"></a></div>
+            <div class="rond-pays-afrique"><a href="afrique-sud.html"></a></div>
+            <div class="rond-pays-maroc"><a href="marocv2.html"></a></div>
+            <div class="rond-pays-angleterre">
+              <a href="englandv2.html"></a>
+            </div>
 
             <h1 class="hp-h1">make your day every day, with our japan tea</h1>
-            <button class="hp-button">Découvrez</button>
+
+            <a href="japonv2.html"
+              ><button class="hp-button">Découvrez</button></a
+            >
           </div>
           <!-- <div class="country-container">
             <img src="assets/designdevunicorn.jpeg" alt="photo-england" />
@@ -110,7 +138,10 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris
           volutpat lacus nec mauris, egestas.
         </p>
-        <button class="hp-button-click-collect">Réserver</button>
+
+        <a href="clickAndCollect.html"
+          ><button class="hp-button-click-collect">Réserver</button></a
+        >
 
         <div class="hp-carousel-click-collect">
           <div class="hp-image-carousel"></div>
@@ -130,7 +161,9 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
             mauris volutpat lacus nec mauris, egestas.
           </p>
-          <button class="hp-discover-tea">Découvrez nos thés</button>
+          <a href="about.html"
+            ><button class="hp-discover-tea">Découvrez nos thés</button></a
+          >
         </div>
 
         <div class="hp-image-about"></div>
@@ -149,7 +182,9 @@
             amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec
             mauris, egestas.
           </p>
-          <button class="hp-button-click-collect">Réserver</button>
+          <a href="clickAndCollect.html"
+            ><button class="hp-button-click-collect">Réserver</button>
+          </a>
         </div>
 
         <div class="hp-image-click-collect"></div>
@@ -166,7 +201,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
             mauris volutpat lacus nec mauris, egestas.
           </p>
-          <button class="hp-button-ritual">Les rituels</button>
+          <a href=""><button class="hp-button-ritual">Les rituels</button></a>
         </div>
 
         <div class="hp-image-ritual"></div>
@@ -178,7 +213,7 @@
 
       <section class="hp-section-newsletter">
         <div class="hp-newsletter">
-          <h2 class="hp-h2">La plus coopérative des newsletter</h2>
+          <h2 class="hp-h2">La plus coopérative des newsletters</h2>
           <p class="hp-paragraph-newsletter">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
             mauris volutpat lacus nec mauris, egestas.
@@ -194,28 +229,46 @@
     </main>
 
     <!------------------------ FOOTER DEBUT -------------------------->
+    <footer>
+      <div class="footer-container">
+        <img
+          class="footer-logo"
+          src="assets/images/footer-logo-light.svg"
+          alt="footer logo"
+        />
+        <p>Coopérative de thé éco-responsable</p>
 
-    <footer class="hp-footer">
-      <div class="hp-footer-container">
-        <div class="hp-logo-footer">
-          <img src="" alt="logo-identity" />
-          <ul class="hp-icon-rs">
-            <img src="" alt="logo-facebook" />
-            <img src="" alt="logo-instagram" />
-            <img src="" alt="logo-pinterest" />
-          </ul>
-        </div>
-        <ul>
-          <li>Accueil</li>
-          <li>Pays</li>
-          <li>Click & collect</li>
-          <li>A propos</li>
-          <li>Contact</li>
+        <ul class="footer-social-medias">
+          <li>
+            <a href="#"
+              ><img src="assets/images/facebook.svg" alt="logo-facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/images/Pinterest.svg" alt="logo-pinterest"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/images/instagram.svg" alt="logo-instagram"
+            /></a>
+          </li>
         </ul>
+        <ul class="footer-nav">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Pays</a></li>
+          <li><a href="#">Click & Collect</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="copyright">
+          © Copyright 2022 Identi'T. Tous droits réservés.
+        </h3>
       </div>
-      <div><p class="hp-copyright">© IdentiT 2022</p></div>
     </footer>
 
     <!------------------------ FOOTER FIN -------------------------->
+    <script src="index.js"></script>
   </body>
 </html>
