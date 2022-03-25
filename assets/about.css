@@ -30,7 +30,6 @@
   --footer-font-size-mobile: 1.25rem;
   --footer-copyright-size-mobile: 0.85rem;
   --hauteur-menu: 60px;
-
 }
 /* Reset */
 * {
@@ -101,9 +100,16 @@ nav a img{
   background-color: rgba(49, 56, 53, 0.794); 
   top: 67px;  
 } 
-.nav-menu li { 
+.nav-menu li {
 text-align: center; /* centrer les li - Accueil, Pays etc...*/ 
 width: 100%; /* largeur des li - Accueil, Pays etc... */
+font-family: var(--title-font);
+}
+.nav-menu > li:hover > a {
+  color: #255957;
+}
+.nav-menu > li > a:hover {
+  color: #255957;
 }
 .nav-menu.active {
   left: 0;
@@ -216,7 +222,7 @@ a {
   height: 31.938rem;
  /* margin-left: 5rem;  */
   margin-bottom: 5rem; 
-  /* margin:5rem; */
+  margin:5rem;
 }
 .about-producerCard img {
   margin-bottom:2rem;
@@ -320,6 +326,7 @@ footer h3 {
   .about{
  font-size:var(--title-font-size);
   }
+
   header{
     display:none;
   }
@@ -450,5 +457,4 @@ footer h3 {
   .hp-facebook-icon {
     height: 1.6rem;
   }
-
 }

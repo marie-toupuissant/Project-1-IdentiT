@@ -43,12 +43,12 @@ function closeMenu() {
         { 
             image: "assets/images/Guillaume-Miche.png",
             title: "Guillaume Miche",
-            content:" “Je suis Guillaume , producteur de thé. J'aime le thé saveur fruits rouges et les sandwichs triangles.” ",
+            content:" “Je suis Guillaume , producteur de thé. J'aime les infusions saveur fruits rouges et les sandwichs triangles.” ",
         },
         { 
             image: "assets/images/Marie-Toupuissant.png",
             title: "Marie Toupuissant",
-            content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
+            content:" “ Je parcours le monde à la recherche des meilleurs crus de thé. Passionnée par les infusions Rooibos” ",
         },
         { 
             image: "assets/images/Stephanie-Caussier.png",
