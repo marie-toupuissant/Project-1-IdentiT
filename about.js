@@ -16,20 +16,11 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-    // Manipulation DOM section Producers group
-    // dataProducersGroup.forEach(aboutProducersGroup =>{
-    //     console.log(aboutProducersGroup);
-    //     const producersGroup = document.createElement("section");
-    //     producersGroup.classList.add('aboutProducersGroup');
-    //     producersGroup.innerHTLM = `   
-    //     <h1> ${aboutProducersGroup.title} </h1>
-    //     <p> ${aboutProducersGroup.description} </p>`
-    //     document.querySelector(".aboutProducersGroup").appendChild(producersGroup);
-    // });
 
-    // DropDownMenu
+    // DropDownMenu button pays
 
     function dropDownMenu() {
+    
         const countryDropDownMenu = document.getElementById("countryDropDownMenu");
         if(countryDropDownMenu.style.display === "flex"){
             countryDropDownMenu.style.display = "none";
@@ -40,24 +31,27 @@ function closeMenu() {
             countryDropDownMenu.style.color="#f0ece9";
         }
     };
+
+ // Manipulation DOM section Producers group
+
     const dataProducerInfo = [
         { 
-            image: "assets/images/about-picture.png",
+            image: "assets/images/Briac_Rousseau.png",
             title: "Briac Rousseau",
-            content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
+            content:" “ Horticulteur de métier, les plantes m'ont appri à mieux me connaitre. Je leur donne beaucoup d'amour et elles me le rendent bien. J'aime rêver, voyager, m'envoler à travers la dégustation de thés venant d'horizons lointains, ce qui est également idéal pour une séance de méditation réussie !” ",
         },
         { 
-            image: "assets/images/about-picture.png",
+            image: "assets/images/Guillaume-Miche.png",
             title: "Guillaume Miche",
-            content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
+            content:" “Je suis Guillaume , producteur de thé. J'aime le thé saveur fruits rouges et les sandwichs triangles.” ",
         },
         { 
-            image: "assets/images/about-picture.png",
+            image: "assets/images/Marie-Toupuissant.png",
             title: "Marie Toupuissant",
             content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
         },
         { 
-            image: "assets/images/about-picture.png",
+            image: "assets/images/Stephanie-Caussier.png",
             title: "Stéphanie Caussier",
             content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
         }
@@ -77,17 +71,3 @@ function closeMenu() {
         document.querySelector(".aboutProducersInfo").appendChild(producerCard);
     });
 
-//     const dataFooter = [
-//         {
-//         image:"assets/images/footer-logo-light.svg",
-//         content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas."
-//     }
-// ];
-//     dataFooterContent.forEach(footerCard =>{
-//         const footerCard = document.createElement("div");
-//         footerCard.classList.add("footer-logo");
-//         footerCard.innerHTML = 
-//         ` <img src = ${footerCard.image} alt="footer logo">
-//         <p> ${footerCard.content}</p>`
-//         document.querySelector(".footer-container").appendChild(footerCard);
-//     })
