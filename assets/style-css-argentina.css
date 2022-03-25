@@ -161,12 +161,37 @@ body {
   /*********************************** SECTION ABOUT FIN ***********************************/
   /*********************************** SECTION PICTO DEBUT ***********************************/
 
-  div .img-picto {
-    background-image: url("/assets/images/tasse.svg");
+  .img-picto01 {
+    background-image: url("/assets/images/tasse01.svg");
     height: 8rem;
     width: 8rem;
-    border-radius: 100%;
-    background-color: #a8c8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto02 {
+    background-image: url("/assets/images/tasse02.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto03 {
+    background-image: url("/assets/images/tasse03.svg");
+    height: 8rem;
+    width: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-picto04 {
+    background-image: url("/assets/images/tasse04.svg");
+    height: 8rem;
+    width: 8rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,16 +291,17 @@ body {
   /*********************************** SECTION RITUAL FIN ***********************************/
 
   /*********************************** SECTION FOOTER DEBUT ***********************************/
+  /*********************************** SECTION NEWSLETTER FIN ***********************************/
 
-  /*----- Footer -----*/
   footer {
-    background-color: var(--footer-color);
+    background-color: #303030;
     padding-bottom: 3.125rem;
     color: var(--background-color);
+    margin: 0rem;
   }
   .footer-container {
     margin-left: 3rem;
-    margin-top: 2rem;
+    padding-top: 3rem;
   }
   .footer-logo {
     width: 5.5rem;
@@ -295,7 +321,10 @@ body {
   }
   .footer-social-medias {
     display: flex;
+    margin-left: 0rem;
+    padding-left: 0rem;
   }
+
   .footer-social-medias li {
     margin-right: 1rem;
   }
@@ -318,6 +347,15 @@ body {
     font-size: var(--footer-copyright-size-mobile);
     font-family: var(--sub-title-font);
     margin-top: 3rem;
+  }
+
+  .footer-nav {
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    font-weight: lighter;
   }
 }
 /*********************************** SECTION FOOTER FIN ***********************************/
@@ -735,7 +773,6 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    padding-top: 1rem;
   }
 
   .footer-social-medias img {
