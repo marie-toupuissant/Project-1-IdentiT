@@ -1,126 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A propos</title>
-    <link rel="stylesheet" href="assets/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <nav class="navbar">
-            <a href="index.html" class="nav-logo"><img src="assets/images/logo-identite.svg" alt="logo IdentiT"></a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" onclick="dropDownMenu()" class="nav-link">Pays</a>
-                        <ul id="countryDropDownMenu" style="display:none">
-                            <li> Afrique du Sud</li>
-                            <li>Angleterre</li>
-                            <li>Argentine</li>
-                            <li>Japon</li>
-                            <li>Maroc</li>
-                        </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="clickAndCollect.html" class="nav-link">Click & Collect</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">A propos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo"
+          ><img src="assets/images/logo-identite.svg" alt="logo IdentiT"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" onclick="dropDownMenu()" class="nav-link">Pays</a>
+            <ul id="countryDropDownMenu" style="display: none">
+              <li>Afrique du Sud</li>
+              <li>Angleterre</li>
+              <li>Argentine</li>
+              <li>Japon</li>
+              <li>Maroc</li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-        </header>
-            <!------------------------  Header Nav Desktop -------------------------->
-        <header class=" header-desktop">
-
-            <nav class="nav-desktop">
-              <ul class=" ul-desktop">
-                <a href="index.html"><img
-                    src="/assets/images/logo-identite.svg"
-                    alt="logo-identity"
-                    class="hp-logo"
-                /></a>
-                <li>
-                  <a href="index.html">Accueil</a>
-                </li>
-                <li class="menu-deroulant">
-                  <a href="#">Pays</a>
-                  <ul class="sous-menu">
-                    <li class="li-sous-menu"><a href="south-africa.html">Afrique du Sud</a></li>
-                    <li class="li-sous-menu" ><a href="england.htlm">Angleterre</a></li>
-                    <li class="li-sous-menu"><a href="argentina.html">Argentine</a></li>
-                    <li class="li-sous-menu"><a href="japon.html">Japon</a></li>
-                    <li class="li-sous-menu"><a href="morocco.html">Maroc</a></li>
-                  </ul>
-                </li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="clickAndCollect.html">Click & collect</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <img
-                  src="assets/images/facebook.svg"
-                  alt="logo-facebook"
-                  class="hp-facebook-icon"/>
-                <img
-                  src="assets/images/Pinterest.svg"
-                  alt="logo-pinterest"
-                  class="hp-facebook-icon"/>
-                <img
-                  src="assets/images/instagram.svg"
-                  alt="logo-instagram"
-                  class="hp-facebook-icon"/>
-              </ul>
-            </nav>
-        </header>
-
-     <main id="main-about">
-        <section class="aboutProducersGroup">
-            <div class="about-group-photo-producer"></div>
-            <h1>A propos</h1>
-            <p>"Véritables experts dans l’art de la dégustation, nos producteurs ont pour rôle de transmettre leur expertise et leur passion. Ce sont eux qui, au quotidien, vous guident sur les sentiers des saveurs et des parfums vers le meilleur du thé."</p>
-        </section>
-
-        <div class="container-aboutProducersInfo">
-        <section class="aboutProducersInfo"></section>
+          </li>
+          <li class="nav-item">
+            <a href="clickAndCollect.html" class="nav-link">Click & Collect</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+      </nav>
+    </header>
+    <!------------------------  Header Nav Desktop -------------------------->
+    <header class="header-desktop">
+      <nav class="nav-desktop">
+        <ul class="ul-desktop">
+          <a href="index.html"
+            ><img
+              src="/assets/images/logo-identite.svg"
+              alt="logo-identity"
+              class="hp-logo"
+          /></a>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Pays</a>
+            <ul class="sous-menu">
+              <li><a href="afrique-sud.html">Afrique du Sud</a></li>
+              <li><a href="englandv2.html">Angleterre</a></li>
+              <li><a href="argentinav2.html">Argentine</a></li>
+              <li><a href="japonv2.html">Japon</a></li>
+              <li><a href="marocv2.html">Maroc</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="clickAndCollect.html">Click & collect</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <img
+            src="assets/images/facebook.svg"
+            alt="logo-facebook"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="assets/images/Pinterest.svg"
+            alt="logo-pinterest"
+            class="hp-facebook-icon"
+          />
+          <img
+            src="assets/images/instagram.svg"
+            alt="logo-instagram"
+            class="hp-facebook-icon"
+          />
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-about">
+      <section class="aboutProducersGroup">
+        <div class="about-group-photo-producer"></div>
+        <h1>A propos</h1>
+        <p>
+          "Véritables experts dans l’art de la dégustation, nos producteurs ont
+          pour rôle de transmettre leur expertise et leur passion. Ce sont eux
+          qui, au quotidien, vous guident sur les sentiers des saveurs et des
+          parfums vers le meilleur du thé."
+        </p>
+      </section>
+
+      <div class="container-aboutProducersInfo">
+        <section class="aboutProducersInfo"></section>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <img class="footer-logo"src="assets/images/footer-logo-light.svg" alt="footer logo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.</p>
-       
+      <div class="footer-container">
+        <img
+          class="footer-logo"
+          src="assets/images/footer-logo-light.svg"
+          alt="footer logo"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris
+          volutpat lacus nec mauris, egestas.
+        </p>
+
         <ul class="footer-social-medias">
-            <li><a href="#"><img src="assets/images/facebook.svg" alt="logo-facebook"></a></li>
-            <li><a href="#"><img src="assets/images/Pinterest.svg" alt="logo-pinterest"></a></li>
-            <li><a href="#"><img src="assets/images/instagram.svg" alt="logo-instagram"></a></li>
+          <li>
+            <a href="#"
+              ><img src="assets/images/facebook.svg" alt="logo-facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/images/Pinterest.svg" alt="logo-pinterest"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/images/instagram.svg" alt="logo-instagram"
+            /></a>
+          </li>
         </ul>
         <ul class="footer-nav">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">Pays</a></li>
-            <li><a href="clickAndCollect.html">Click & Collect</a></li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">Pays</a></li>
+          <li><a href="clickAndCollect.html">Click & Collect</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-         <h3>© Copyright 2022 Identi'T. Tous droits réservés.</h3>
-        </div>
+        <h3>© Copyright 2022 Identi'T. Tous droits réservés.</h3>
+      </div>
     </footer>
-     
-      <script src="about.js"></script>
+
+    <script src="about.js"></script>
     <!-- <script src="index.js"></script> -->
-</body>
+  </body>
 </html>
