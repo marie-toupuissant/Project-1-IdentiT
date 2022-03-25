@@ -14,101 +14,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="" alt="logo-identity" />
-        <ul>
-          <li>Accueil</li>
-          <li>Pays</li>
-          <li>Click & collect</li>
-          <li>A propos</li>
-          <li>Contact</li>
-        </ul>
-        <ul>
-          <img src="" alt="logo-facebook" />
-          <img src="" alt="logo-instagram" />
-          <img src="" alt="logo-pinterest" />
-        </ul>
+    
+    <!-- Header-mobile -->
+
+    <header class="header">
+      <nav class="navbar">
+          <a href="#" class="nav-logo"><img src="assets/images/footer-logo-light.svg" alt="logo IdentiT"></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Accueil</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" onclick="dropDownMenu()" class="nav-link">Pays</a>
+                      <ul id="countryDropDownMenu" style="display:none">
+                          <li> Afrique du Sud</li>
+                          <li>Angleterre</li>
+                          <li>Argentine</li>
+                          <li>Japon</li>
+                          <li>Maroc</li>
+                      </ul>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Click & Collect</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">A propos</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
       </nav>
     </header>
+
+    <!-- Header-desktop -->
+
+    <header class=" header-desktop">
+
+      <nav class="nav-desktop">
+        <ul class=" ul-desktop">
+          <a href="index.html"><img
+              src="/assets/images/logo-identite.svg"
+              alt="logo-identity"
+              class="hp-logo"
+          /></a>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li class="menu-deroulant">
+            <a href="#">Pays</a>
+            <ul class="sous-menu">
+              <li class="li-sous-menu"><a href="south-africa.html">Afrique du Sud</a></li>
+              <li class="li-sous-menu" ><a href="england.htlm">Angleterre</a></li>
+              <li class="li-sous-menu"><a href="argentina.html">Argentine</a></li>
+              <li class="li-sous-menu"><a href="japon.html">Japon</a></li>
+              <li class="li-sous-menu"><a href="morocco.html">Maroc</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="about.html">Click & collect</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <img
+            src="assets/images/facebook.svg"
+            alt="logo-facebook"
+            class="hp-facebook-icon"/>
+          <img
+            src="assets/images/Pinterest.svg"
+            alt="logo-facebook"
+            class="hp-facebook-icon"/>
+          <img
+            src="assets/images/instagram.svg"
+            alt="logo-facebook"
+            class="hp-facebook-icon"/>
+        </ul>
+      </nav>
+  </header>
+
     <main>
       
       <!-- section-1-clickAndCollect  -->
         
       <section class="clickAndCollect-first-section">
 
-
           <!-- img intro mobile -->
-          
-          <img class="clickAndCollect-intro-picture-mobile" src="/assets/images/Tea-variety-mobile.png" alt="clickAndCollect-intro-picture">
-
+          <img class="clickAndCollect-intro-picture-mobile" src="/assets/images/Tea-variety-mobile-V2.png" alt="clickAndCollect-intro-picture">
 
           <!-- img intro desktop -->
-          
-          <img class="clickAndCollect-intro-picture-desktop" src="/assets/images/Tea-variety-desktop.png" alt="clickAndCollect-intro-picture">
-
+          <img class="clickAndCollect-intro-picture-desktop" src="/assets/images/Tea-variety-desktop-V2.png" alt="clickAndCollect-intro-picture">
 
           <!-- h1 intro  -->
-
           <h1 class="clickAndCollect-main-title">
             Click & Collect
           </h1>
           
-
           <!-- p intro  -->
-          
           <p class="clickAndCollect-intro-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatum commodi. Quas dignissimos assumenda ipsa.
+            Commandez   -   Retirez   -   Dégustez.
           </p>
           
       </section>
       
       <section class="clickAndCollect-section-2-container">
         
-
-        <!-- section-2-clickAndCollect  -->
-        
+        <!-- section-2-clickAndCollect-ANGLETERRE  -->
         <section class="clickAndCollect-shop"> 
 
-
-          <!-- div packshot  -->
-                  
+          <!-- div packshot  -->     
           <div class="clickAndCollect-packshot-div">
-
-                    
+        
             <!-- img packshot  -->
-            
-            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-test.png" alt="clickAndCollect-packshot"> 
+            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-england.png" alt="clickAndCollect-packshot"> 
           </div>
 
-
           <!-- div product  -->
-
           <div class="clickAndCollect-product-div">
 
-            
             <!-- h4 product  -->
-            
             <h4 class="clickAndCollect-product-name">
-              Thé matcha origine Japon
+              Thé noir origine Angleterre
             </h4>
-            
-
+          
             <!-- p product -->
-            
             <p class="clickAndCollect-product-price">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Kit découverte à partir de 7 €
             </p>
           </div>
 
-
           <!-- div buy -->
-
           <div class="clickAndCollect-buy-div">
             
-
             <!-- button buy -->
-            
             <button class="clickAndCollect-buy">
               Ajouter au panier
             </button>
@@ -116,128 +156,165 @@
 
         </section>
 
-
-        <!-- section-2-clickAndCollect  -->
-        
+        <!-- section-2-clickAndCollect-ARGENTINE  -->
         <section class="clickAndCollect-shop-nb-2bis"> 
 
-
-          <!-- div packshot  -->
-                  
+          <!-- div packshot  -->        
           <div class="clickAndCollect-packshot-div">
-
-                    
+    
             <!-- img packshot  -->
-            
-            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-test.png" alt="clickAndCollect-packshot"> 
+            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-argentina.png" alt="clickAndCollect-packshot"> 
           </div>
 
-
           <!-- div product  -->
-
           <div class="clickAndCollect-product-div">
 
-            
             <!-- h4 product  -->
-            
             <h4 class="clickAndCollect-product-name">
-              Thé matcha origine Japon
+              Thé vert origine Argentine
             </h4>
-            
 
             <!-- p product -->
-            
             <p class="clickAndCollect-product-price">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Kit découverte à partir de 7 €
             </p>
           </div>
 
-
           <!-- div buy -->
-
           <div class="clickAndCollect-buy-div">
             
-
             <!-- button buy -->
-            
             <button class="clickAndCollect-buy">
               Ajouter au panier
             </button>
           </div>
-
         </section>
 
-
-        <!-- section-2-clickAndCollect  -->
-        
+        <!-- section-2-clickAndCollect-AFRIQUE DU SUD  -->
         <section class="clickAndCollect-shop"> 
 
-
-          <!-- div packshot  -->
-                  
-          <div class="clickAndCollect-packshot-div">
-                    
+          <!-- div packshot  -->   
+          <div class="clickAndCollect-packshot-div">    
 
             <!-- img packshot  -->
-            
-            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-test.png" alt="clickAndCollect-packshot"> 
+            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-southAfrica.png" alt="clickAndCollect-packshot"> 
           </div>
 
-
           <!-- div product  -->
+          <div class="clickAndCollect-product-div">            
 
-          <div class="clickAndCollect-product-div">
-            
-
-            <!-- h4 product  -->
-            
+            <!-- h4 product  -->            
             <h4 class="clickAndCollect-product-name">
-              Thé matcha origine Japon
-            </h4>
-            
+              Thé blanc origine Afrique du Sud
+            </h4>            
 
-            <!-- p product -->
-            
+            <!-- p product -->            
             <p class="clickAndCollect-product-price">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Kit découverte à partir de 7 €
             </p>
           </div>
 
-
           <!-- div buy -->
+          <div class="clickAndCollect-buy-div">          
 
-          <div class="clickAndCollect-buy-div">
-            
-
-            <!-- button buy -->
-            
+            <!-- button buy -->            
             <button class="clickAndCollect-buy">
               Ajouter au panier
             </button>
           </div>
-
         </section>
-        
+
+        <!-- section-2-clickAndCollect-JAPON  -->
+        <section class="clickAndCollect-shop"> 
+
+          <!-- div packshot  -->   
+          <div class="clickAndCollect-packshot-div">    
+
+            <!-- img packshot  -->
+            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-japan.png" alt="clickAndCollect-packshot"> 
+          </div>
+
+          <!-- div product  -->
+          <div class="clickAndCollect-product-div">            
+
+            <!-- h4 product  -->            
+            <h4 class="clickAndCollect-product-name">
+              Thé matcha origine Japon
+            </h4>            
+
+            <!-- p product -->            
+            <p class="clickAndCollect-product-price">
+              Kit découverte à partir de 7 €
+            </p>
+          </div>
+
+          <!-- div buy -->
+          <div class="clickAndCollect-buy-div">          
+
+            <!-- button buy -->            
+            <button class="clickAndCollect-buy">
+              Ajouter au panier
+            </button>
+          </div>
+        </section>
+
+        <!-- section-2-clickAndCollect-MAROC  -->
+        <section class="clickAndCollect-shop"> 
+
+          <!-- div packshot  -->   
+          <div class="clickAndCollect-packshot-div">    
+
+            <!-- img packshot  -->
+            <img class= "clickAndCollect-packshot" src="/assets/images/packshot-tea-morocco.png" alt="clickAndCollect-packshot"> 
+          </div>
+
+          <!-- div product  -->
+          <div class="clickAndCollect-product-div">            
+
+            <!-- h4 product  -->            
+            <h4 class="clickAndCollect-product-name">
+              Thé rooibos origine Maroc
+            </h4>            
+
+            <!-- p product -->            
+            <p class="clickAndCollect-product-price">
+              Kit découverte à partir de 7 €
+            </p>
+          </div>
+
+          <!-- div buy -->
+          <div class="clickAndCollect-buy-div">          
+
+            <!-- button buy -->            
+            <button class="clickAndCollect-buy">
+              Ajouter au panier
+            </button>
+          </div>
+        </section>
+
       </section>
       
       </main>
       <footer>
-        <img src="" alt="logo-identity">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa.</p>
-        <ul>
-            <li>Accueil</li>
-            <li>Pays</li>
-            <li>Click & collect</li>
-            <li>A propos</li>
-            <li>Contact</li>
-          </ul>
-          <ul>
-            <img src="" alt="logo-facebook" />
-            <img src="" alt="logo-instagram" />
-            <img src="" alt="logo-pinterest" />
-          </ul>
-        </nav>
-        <p>c-tout droits réservés 2022/ IdentiT</p>
+        <div class="footer-container">
+            <img class="footer-logo"src="assets/images/footer-logo-light.svg" alt="footer logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.</p>
+       
+        <ul class="footer-social-medias">
+            <li><a href="#"><img src="assets/images/facebook.svg" alt="logo-facebook"></a></li>
+            <li><a href="#"><img src="assets/images/Pinterest.svg" alt="logo-pinterest"></a></li>
+            <li><a href="#"><img src="assets/images/instagram.svg" alt="logo-instagram"></a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Pays</a></li>
+            <li><a href="#">Click & Collect</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+         <h3>© Copyright 2022 Identi'T. Tous droits réservés.</h3>
+        </div>
     </footer>
+    <script src="clickAndCollectV2.js"></script>
 </body>
 </html> 
