@@ -38,12 +38,12 @@ function closeMenu() {
         { 
             image: "assets/images/Briac_Rousseau.png",
             title: "Briac Rousseau",
-            content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
+            content:" “ Horticulteur de métier, les plantes m'ont appri à mieux me connaitre. Je leur donne beaucoup d'amour et elles me le rendent bien. J'aime rêver, voyager, m'envoler à travers la dégustation de thés venant d'horizons lointains, ce qui est également idéal pour une séance de méditation réussie !” ",
         },
         { 
             image: "assets/images/Guillaume-Miche.png",
             title: "Guillaume Miche",
-            content:" “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor mauris volutpat lacus nec mauris, egestas.” ",
+            content:" “Je suis Guillaume , producteur de thé. J'aime le thé saveur fruits rouges et les sandwichs triangles.” ",
         },
         { 
             image: "assets/images/Marie-Toupuissant.png",

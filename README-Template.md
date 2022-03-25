@@ -1,6 +1,6 @@
 #Project -1 Identi'T
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
+[![forthebadge]()](http://forthebadge.com)
 
 Une petite description du projet
 ## About The Project
@@ -33,15 +33,12 @@ _(pour le lien mettez simplement l'URL de votre projets suivi de `/tags`)_
 - **Marie Toupuissant** _alias_ [@marie-toupuissant](https://github.com/marie-toupuissant)
 - **Stéphanie Caussier** _alias_ [@Stefannee](https://github.com/Stefannee)
 
-Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
-
-_(pour le lien mettez simplement l'URL de votre projet suivi de `/contirubors`)_
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
-Jenny Viannay
-Youssef Slim
 
--
+- **Jenny Viannay** _teacher_ [@JennyViannay](https://github.com/JennyViannay)
+- **Youssef Slim** _teacher_ [@JennyViannay](https://github.com/JennyViannay)
+
