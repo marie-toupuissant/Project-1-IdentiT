@@ -662,21 +662,27 @@ body {
 
   /*********************************** SECTION CLICK & COLLECT CAROUSEL DEBUT ***********************************/
 
-  section .hp-container-carousel-click-collect {
-    background-color: #f4ece6;
+  .hp-container-carousel-click-collect {
+    margin: 0rem 5rem 0rem 5rem;
+  }
+
+  .hp-p02 {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-spacing);
+    text-align: left;
   }
 
   .hp-carousel-click-collect {
-    height: 600px;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    margin: var(--margin-right) var(--margin-left);
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
   }
 
   div .hp-image-carousel {
-    background-image: url("/assets/images/JasminePearls_Front_WR_540x.webp");
+    background-image: url("/assets/images/packshot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
